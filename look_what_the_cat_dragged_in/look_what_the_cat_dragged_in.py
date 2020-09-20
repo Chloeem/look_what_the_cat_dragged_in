@@ -2330,17 +2330,7 @@ def intro():
     custom_fig = Figlet(font='ogre')
     greeting = Figlet(font='small')
     print("")
-    # print ("------------------------------------------------------------------------------------")
-    # skip_intro = input("Would you like to skip the introduction? [Y]/[N]: ")
-    # if skip_intro == "y" or skip_intro == "Y":
-    #     print ("------------------------------------------------------------------------------------")
-    #     start_game()
-    # elif skip_intro == "n" or skip_intro == "N":
-    #     print ("------------------------------------------------------------------------------------")
-    #     intro()
-    # else:
-    #     intro()
-    # playsound.playsound('pitterpatter.wav', False)
+    playsound.playsound('pitterpatter.wav', False)
     print ("------------------------------------------------------------------------------------")
     print("------------------------------------------------------------------------------------")
     time.sleep(1.5)
