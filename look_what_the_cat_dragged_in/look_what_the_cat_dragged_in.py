@@ -7,6 +7,7 @@ import playsound
 import random
 
 
+
 # GAME ENDING CREDITS
 def end_game():
     print("\n")
@@ -80,9 +81,9 @@ def you_won():
     print("------------------------------------------------------------------------------------")
     time.sleep(3)
     print("\n\n\n\n")
-    print("------------------------------------------------------------------------------------")
+    print(" -----------------------------------------------------------------------------------")
     time.sleep(0.5)
-    print("Would you like to play again? [Y]/[N] ")
+    print("|     Would you like to play again? [Y]/[N]                                         |")
     time.sleep(1.5)
     play_again = input("Answer: ")
     time.sleep(0.5)
@@ -90,7 +91,7 @@ def you_won():
     if play_again == "Y" or play_again == "y" or  play_again == "yes" or  play_again == "Yes" or  play_again == "YES":
         intro()
     elif    play_again == "N" or play_again == "n" or play_again == "No" or play_again == "no" or  play_again == "NO":
-        print("------------------------------------------------------------------------------------")
+        print(" -----------------------------------------------------------------------------------")
         print("\n")
         time.sleep(1.5)
         print(game_end.renderText("GAME OVER!"))
@@ -121,10 +122,25 @@ def after_moth_quiz():
         tour_offer = input("Enter Choice: ")
         playsound.playsound('moth_laugh.wav', False)
     if tour_offer.lower() == "yes":
-        for char in "\nThe Moth starts giggling againn..\n'HEHEHEhehohohohehe...'\nShe turns to the toaster with the biggest grin on her mothy face\nand tells you this is her hilarious best friend\nPointing to the toaster\n...\nShe says tt tells great jokes in the morning..\nYou look at her perplexed and start to wonder if she can help\nyou after all...\nIt seems loneliness has got to her..\nShe starts explaining to you how the toaster works.\nYou leap to the ready, down into the toaster...\n'1!!!' She shouts..\n....2!!..\n...3!!!..\nThe moth pushes the lever flying you up UP UPPPPP\nand AWWWWAAAAAYY..\nOut the window...jumping with..\n":
+        for char in "\nThe Moth starts giggling againn..\n'HEHEHEhehohohohehe...'\nShe turns to the toaster with the biggest grin on her mothy face\nand tells you this is her hilarious best friend\nPointing to the toaster\n...\nShe says it tells great jokes in the morning..\nYou look at her perplexed and start to wonder if she can help\nyou after all...\nIt seems loneliness has got to her..\nShe starts explaining to you how the toaster works.\nYou leap to the ready, down into the toaster...\n'1!!!' She shouts..\n....2!!..\n...3!!!..\nThe moth pushes the lever flying you up UP UPPPPP\nand AWWWWAAAAAYY..\nOut the window...jumping with..\n":
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
+        print("\n\n")
+        print(" ----------------------------------------------------------    ")
+        print("|                                                          |    ")
+        print("|              ______                                      |    ")
+        print("|          ___((     )_                                    |    ")
+        print("|        |'->==))   (= \                                   |    ")
+        print("|        |  \ ||_____|_ \                                  |    ")
+        print("|        |[> \___________\                                 |    ")
+        print("|        | | |            |                                |    ")
+        print("|         \  |   TOASTER  |             .--.               |    ")
+        print("|          \ |   -------  |)---.   .---'    `-.----(]=     |    ")
+        print("|           \|____________|     `-'                        |    ")
+        print("|                                                          |    ")
+        print(" ----------------------------------------------------------     ")                                     
+        print("\n\n")
         if leaf_offer.lower() == "yes":
             for char in "\nThe Moth shout to you\n\nLETTUCE LEAFFFFF'\n\nYou grab the leaf and paraglide out the window....":
                 sleep(0.15)
@@ -135,6 +151,21 @@ def after_moth_quiz():
             for char in "\nThe Moth waves the lettuce leaf and shouts 'GLIDERRRR' at to you\n\nYOU PANIC\nNOOOOO!!\nYou should have taken the leaf to glide on\n....\nNOOOOO\nAHHHH...\n....You SPLAT on the window\n":
                 sleep(0.15)
                 sys.stdout.write(char)
+            print("\n")
+            print(" ------------------------------")
+            print("|   !!     !           !!      |
+            print("|           .  !   .           |")
+            print("|       .  /|     /\  ,    !!  |")    
+            print("|    !  |\/ |/\__/  \/|___     |")
+            print("|     __|                /     |")
+            print("|     \       SPLAT!     \  !  |")
+            print("|!!   /       -----      _\    |")
+            print("|    /___  _  _         _\     |")
+            print("|       /,' \| \  /\|\ |       |")
+            print("|      /'    `  \/  ` \|    !! |")
+            print("|  !!          !          !    |")
+            print(" ------------------------------")
+            print("\n")
             playsound.playsound('splat.wav', False)
             time.sleep(1.5)
             playsound.playsound('squeaks.wav', False)
@@ -277,17 +308,20 @@ def after_spider_quiz():
         explore = input("Enter Choice: ")
     if explore.lower() == "espresso machine":
         print("\n\n")
-        print("                           ______________________   ")
-        print("                           (___________           | ")
-        print("                              [XXXXX]   |          | ")
-        print("                         __  /~~~~~~~\  |          | ")
-        print("                        /  \|@@@@@@@@@\ |          | ")
-        print("         )              \   |@@@@@@@@@@||          | ")
-        print("        (                   \@@@@@@@@@@||  ______  | ")
-        print("       __)__                 \@@@@@@@@/ | |on|off| | ")
-        print("    C\|     \               __\@@@@@@/__|  ~~~~~~  | ")
-        print("      \     /              (____________|__________| ")
-        print("       \___/               |_______________________| ")
+        print(" -----------------------------------------------------------------")
+        print("|                                ______________________           |")
+        print("|                                (___________           |         |")
+        print("|                                  [XXXXX]   |          |         |")
+        print("|                             __  /~~~~~~~\  |          |         |")
+        print("|                            /  \|@@@@@@@@@\ |          |         |")
+        print("|             )              \   |@@@@@@@@@@||          |         |")
+        print("|            (                   \@@@@@@@@@@||  ______  |         |")
+        print("|           __)__                 \@@@@@@@@/ | |on|off| |         |")
+        print("|        C\|     \               __\@@@@@@/__|  ~~~~~~  |         |")
+        print("|          \     /              (____________|__________|         |")
+        print("|           \___/               |_______________________|         |")
+        print("|                                                                 |")
+        print(" -----------------------------------------------------------------")
         print("\n\n")
         playsound.playsound('drink.wav', True)
         playsound.playsound('energized.wav', False)
@@ -306,29 +340,35 @@ def after_spider_quiz():
             time.sleep(2)
             playsound.playsound('gameshow.wav', False)
             print("\n\n")
-            print("     .-'''''''   ,.               n,                                      ..      ..   ")
-            print("    \-          ,,'''-..      n   '\.                ,.n           ..--''           )     ")
-            print("     \-     . .,;))     ''-,   \     ''.. .'''. .,-''    .n   ..-''   (( o         _/     ")
-            print("      \- ' ''''':'          ''-.'' '--_  '     '  ,.--'''.. ''         ' ' ' - .  _/    ")
-            print("       \-                       ''->.   '  ,--. '/' >..''                        _/    ")
-            print("        \                     (,       /  /.  .\ \ ''    ,)                     ./     ")
-            print("         ''.    .  ..         ')          \ .. /         ('          ..       ./    ")
-            print("            ''-... . ._ .__         .''.   /..\   ,'.            __ _ _,__.--'   ")
-            print("               /' ((    ..'' ' ' '-'  6  \/__\/  ' '- - -' ' ',''   - '\   ")
-            print("               '(.  6,    '..          /.   ''  .'          ,,'     ) )  )    ")
-            print("                '\  \ C_,_   ==,      / '_      _|\       ,'', ,,_.;-' _/   ")
-            print("                  '._ ,   ')   E     /'|_ ')()('_' \     C  ,I'''  _.-'    ")
-            print("                     ''''''\ (('   ,/  ''  (()) ''  '-._ _ __---'''      ")
-            print("                            '' '' '    '==='()'=='         ")
-            print("                                       '(       )'         ")
-            print("                                       '6        '               ")   
-            print("                                        \       /            - Hi ".format(name))
-            print("                                        '       '                 ") 
-            print("                                        '       '                 ")
-            print("                                         '      '           ") 
-            print("                                          '    '          ")
-            print("                                           '..'                ")
+            print(" --------------------------------------------------------------------------------------------------")
+            print("|                                                                                                  |")
+            print("|         .-'''''''   ,.               n,                                      ..      ..          |")
+            print("|        \-          ,,'''-..      n   '\.                ,.n           ..--''           )         |")
+            print("|         \-     . .,;))     ''-,   \     ''.. .'''. .,-''    .n   ..-''   (( o         _/         |")
+            print("|          \- ' ''''':'          ''-.'' '--_  '     '  ,.--'''.. ''         ' ' ' - .  _/          |")
+            print("|           \-                       ''->.   '  ,--. '/' >..''                        _/           |")
+            print("|            \                     (,       /  /.  .\ \ ''    ,)                     ./            |")
+            print("|             ''.    .  ..         ')          \ .. /         ('          ..       ./              |")
+            print("|                ''-... . ._ .__         .''.   /..\   ,'.            __ _ _,__.--'                |")
+            print("|                   /' ((    ..'' ' ' '-'  6  \/__\/  ' '- - -' ' ',''   - '\                      |")
+            print("|                  '(.  6,    '..          /.   ''  .'          ,,'     ) )  )                     |")
+            print("|                    '\  \ C_,_   ==,      / '_      _|\       ,'', ,,_.;-' _/                     |")
+            print("|                      '._ ,   ')   E     /'|_ ')()('_' \     C  ,I'''  _.-'                       |")
+            print("|                         ''''''\ (('   ,/  ''  (()) ''  '-._ _ __---'''                           |")
+            print("|                                '' '' '    '==='()'=='                                            |")
+            print("|                                           '(       )'                                            |")
+            print("|                                           '6        '                                            |")   
+            print("|                                            \       /            - Hi                             |")
+            print("|                                            '       '                                             |") 
+            print("|                                            '       '                                             |")
+            print("|                                             '      '                                             |") 
+            print("|                                              '    '                                              |")
+            print("|                                               '..'                                               |")
+            print("|                                                                                                  |")
+            print(" --------------------------------------------------------------------------------------------------")
+            playsound.playsound('hi.wav', False)
             print("\n\n")
+            time.sleep(1.5)
             for char in "\n\n###############################\n##         MOTH QUIZ         ##\n###############################\n\nTry to answer 3 moth related questions.\n\n":
                 sleep(0.15)
                 sys.stdout.write(char)
@@ -357,6 +397,21 @@ def after_spider_quiz():
                 playsound.playsound('squeaks.wav', False)
                 time.sleep(1.5)
                 playsound.playsound('dead.wav', False)
+                print("\n")
+                print(" ------------------------------")
+                print("|   !!     !           !!      |
+                print("|           .  !   .           |")
+                print("|       .  /|     /\  ,    !!  |")    
+                print("|    !  |\/ |/\__/  \/|___     |")
+                print("|     __|                /     |")
+                print("|     \       DEAD!      \  !  |")
+                print("|!!   /       -----      _\    |")
+                print("|    /___  _  _         _\     |")
+                print("|       /,' \| \  /\|\ |       |")
+                print("|      /'    `  \/  ` \|    !! |")
+                print("|  !!          !          !    |")
+                print(" ------------------------------")
+                print("\n")
                 end_game()
             else:
                 after_spider_quiz()
@@ -378,19 +433,19 @@ def spider_quiztime():
     tries = 2
 
     questions = (
-        "Is the venom of the female black widow spider more potent, drop per drop, than that of the rattlesnake? ",
+        "Is the venom of the female black widow spider more potent,\ndrop per drop, than that of the rattlesnake? ",
         "In what country can the smallest spider in the world be found in? ",
         "Do spiders have more legs than crabs? ",
-        "Which country has the deadliest spider, based upon the potency of the venom? ",
-        "Which country are the Kauai cave wolf spider and the Doloff cave spider found in? ",
-        "A spider's silk is approximately twice as strong as a steel strand of the same diameter. ",
-        "Is the Sydney funnel-web spider another name for the Sydney trapdoor spider? ",
+        "Which country has the deadliest spider,\nbased upon the potency of the venom? ",
+        "Which country are the Kauai cave wolf spider\nand the Doloff cave spider found in? ",
+        "A spider's silk is approximately twice as strong\nas a steel strand of the same diameter. ",
+        "Is the Sydney funnel-web spider another name\nfor the Sydney trapdoor spider? ",
         "Jumping spiders can leap how many times their own body length? ",
         "The largest spider in the world is which of the following? ",
         "Can you stop the flow of blood by putting spider webs on a cut? ",
         "Are there spiders that can mimic ants? ",
-        "Has there been a confirmed death in Australia between the years 1980-2002 due to a spider bite? ",
-        "What is the usual minimum number of silk gland pairs that a spider possesses? ",
+        "Has there been a confirmed death in Australia\nbetween the years 1980-2002 due to a spider bite? ",
+        "What is the usual minimum number of silk gland\npairs that a spider possesses? ",
         "Is the orb weaver the heaviest spider that is known in Britain? ",
         "Can spiders get trapped in their own webs? "
     )
@@ -432,21 +487,21 @@ def spider_quiztime():
     )
 
     wikispider = (
-        "The female black widow is the most venomous spider in North America and its venom is 2 times more toxic than the rattlesnake's. Though the venom is more toxic, they are not as deadly, as the black widow spider can only deliver a single small bite.",
-        "This spider is the Paut marplesi from Western Samoa. In 1965 a male specimen was found whose overall length was 0.43 mm or 0.017 inches, which is approximately the size of the full stop (period) at the end of this sentence.",
+        "The female black widow is the most venomous spider\nin North America and its venom is 2 times more\ntoxic than the rattlesnake's. Though the venom\nis more toxic, they are not as deadly, as the black\nwidow spider can only deliver a single small bite.",
+        "This spider is the Paut marplesi from Western Samoa.\nIn 1965 a male specimen was found whose overall\nlength was 0.43 mm or 0.017 inches, which is approximately\nthe size of the full stop (period) at the end of this sentence.",
         "Spiders have 8 legs and crabs have 10 legs.",
-        "The banana spider, Brazilian huntsman, and wolf spider are regarded as the most lethal in the world and come from Brazil. The criterion of 'deadliest' is given according to the spider's venom yield (lethal potential) divided by their venom potency. The banana spider, when using this criterion, yields 6mg of venom with 1 mg being the estimated lethal dosage for human beings. The Brazilian huntsman only needs 0.006 mg to kill a mouse.",
-        "The abovementioned were regarded in 2001 as the two most endangered species of spiders by the International Union for the Conservation of Nature.",
-        "Spider silk is also being investigated for aiding in replacing damaged tendons and ligaments of humans and is being used in bulletproof vests.",
-        "The Sydney trapdoor spider is from the family Ictenizidae. They usually construct burrows that are closed by a 'door'. Bites from these spiders are rarely recorded and there never has been a fatality in Australia resulting from them. The Sydney funnel-web spiders belongs to the Atrax and Hadronyche genera and are highly venomous. Before the antivenin was discovered, their bite was often fatal. These spiders build a flat web with two tunnel-like entrances in a Y configuration.",
-        "The jumping spider is the most common spider in the world. This spider has four large eyes on its face as well as four small eyes on top of its head. These spiders hunt during the day and have good eyesight. The family name for them is Salticidae.",
-        "The Goliath bird-eating spider lives mostly in the rainforests of Suriname, Guyana and French Guiana; but they also have been found in Venezuela and Brazil. The leg span of one of these spiders captured in Venezuela in 1965 was recorded at 28 cm or 11 in. The Goliath bird-eating spider feeds mostly on rodents.",
-        "A spider web has a natural clotting agent in it. When put on a cut this can assist in quickly stopping the blood flow.",
-        "There are several groups of spiders that have evolved to look and behave like ants, flies and wasps, which is known as mimicry. A few of these spiders can even smell like ants and are so convincing that the ants themselves are tricked, therefore the spider is able to enter the nest easily to steal the young.",
-        "There have been no confirmed deaths in Australia due to spider bites since 1979. The only two spiders that had caused deaths now have antivenom available. Redback spiders' antivenom became available in 1956, and for funnel-web spiders, it was introduced in 1980. Antivenom for the funnel-web has been given to over 100 people annually since 1980.",
-        "These glands are found in the rear part of the spider's body and open via holes on the end of another small organ called spinnerets. The majority of spiders have three pairs of spinnerets, though some only have one or two. Each silk gland pair produces a different kind of silk, thus most spiders can produce three various types of silk.",
+        "The banana spider, Brazilian huntsman, and wolf spider\nare regarded as the most lethal in the world and\ncome from Brazil. The criterion of 'deadliest' is given\naccording to the spider's venom yield (lethal potential)\ndivided by their venom potency. The banana spider,\nwhen using this criterion, yields 6mg of venom with\n1 mg being the estimated lethal dosage for human beings.\nThe Brazilian huntsman only needs 0.006 mg to kill a mouse.",
+        "The abovementioned were regarded in 2001 as the two\nmost endangered species of spiders by the International\nUnion for the Conservation of Nature.",
+        "Spider silk is also being investigated for aiding in\nreplacing damaged tendons and ligaments of humans\nand is being used in bulletproof vests.",
+        "The Sydney trapdoor spider is from the family Ictenizidae.\nThey usually construct burrows that are closed\nby a 'door'. Bites from these spiders are rarely\nrecorded and there never has been a fatality\nin Australia resulting from them. The Sydney funnel-web\nspiders belongs to the Atrax and Hadronyche genera\nand are highly venomous. Before the antivenin was discovered,\ntheir bite was often fatal. These spiders build\na flat web with two tunnel-like entrances in a Y configuration.",
+        "The jumping spider is the most common spider in the world.\nThis spider has four large eyes on its face as well\nas four small eyes on top of its head. These spiders\nhunt during the day and have good eyesight.\nThe family name for them is Salticidae.",
+        "The Goliath bird-eating spider lives mostly in the\nrainforests of Suriname, Guyana and French Guiana; but they\nalso have been found in Venezuela and Brazil. The leg span of\none of these spiders captured in Venezuela in 1965 was\nrecorded at 28 cm or 11 in. The Goliath bird-eating spider feeds mostly on rodents.",
+        "A spider web has a natural clotting agent in it.\nWhen put on a cut this can assist in quickly stopping the blood flow.",
+        "There are several groups of spiders that have evolved\nto look and behave like ants, flies and wasps, which\nis known as mimicry. A few of these spiders can even smell\nlike ants and are so convincing that the ants themselves\nare tricked, therefore the spider is able to enter\nthe nest easily to steal the young.",
+        "There have been no confirmed deaths in Australia due\nto spider bites since 1979. The only two spiders that\nhad caused deaths now have antivenom available. Redback spiders'\nantivenom became available in 1956, and for funnel-web spiders,\nit was introduced in 1980. Antivenom for the funnel-web has been\ngiven to over 100 people annually since 1980.",
+        "These glands are found in the rear part of the spider's\nbody and open via holes on the end of another small\norgan called spinnerets. The majority of spiders have\nthree pairs of spinnerets, though some only have one\nor two. Each silk gland pair produces a different\nkind of silk, thus most spiders can produce three\nvarious types of silk.",
         "A female can weigh up to 2.25 grams or 0.08 ounces.",
-        "If a spider is startled or disoriented it can be entangled in its own web. Usually the spider differentiates between safe and non-safe or sticky threads, as these threads are made using different types of silk. Highly sensitive feet and 'knowing its own web structure' provides the ability for the spider to move freely around."
+        "If a spider is startled or disoriented it can be entangled\nin its own web. Usually the spider differentiates\nbetween safe and non-safe or sticky threads, as these\nthreads are made using different types of silk.\nHighly sensitive feet and 'knowing its own web structure'\nprovides the ability for the spider to move freely around."
     )
     while tries > 0:
         tries -= 1
@@ -515,20 +570,24 @@ def spider_quiztime():
 def help_spider():
     print("\n\n")
     playsound.playsound('hi.wav', False)
-    print("             |    ")
-    print("             |    ")
-    print("             |    ")
-    print("         /   |   \    ")
-    print("         \   |   /    ")
-    print("       .  --\|/--  ,    ")
-    print("        '--|___|--'    ")
-    print("        ,--|___|--,    ")
-    print("       '  /\o o/\  `    ")
-    print("         +   +   +     ")
-    print("          `     '    ")
+    print(" -----------------------------------")
+    print("|                 |                 |")
+    print("|                 |                 |")
+    print("|                 |   - Hola!       | ")
+    print("|                 |                 | ")
+    print("|             /   |   \             | ")
+    print("|             \   |   /             | ")
+    print("|           .  --\|/--  ,           | ")
+    print("|            '--|___|--'            |")
+    print("|            ,--|___|--,            | ")
+    print("|           '  /\o o/\  `           | ")
+    print("|             +   +   +             |")
+    print("|              `     '              |")
+    print("|                                   |")
+    print(" -----------------------------------")
     print("\n\n")
     playsound.playsound('attack.wav', False)
-    for char in "\nThe three of you start brawling dust is flying\nYou make a sudden jump in the wasps direction\npinning him to the window, he cant get away...\nThe Spider karate chops the Wasp with her 8 legs\n\n!!SUPER POWER KICK!!y\n\nThe wasp is DEAD!!!\nThe Spider offers you some of the Wasp\nto feast on as thank you.....\nHis fresh delicacy that you assisted in preparing...\nDo you accept this offer?\n[Yes]/[No]\n":
+    for char in "\nThe three of you start brawling dust is flying\nYou make a sudden jump in the wasps direction\npinning him to the window, he cant get away...\nThe Spider karate chops the Wasp with her 8 legs\n\n!!SUPER POWER KICK!!\n\nThe wasp is DEAD!!!\nThe Spider offers you some of the Wasp\nto feast on as thank you.....\nHis fresh delicacy that you assisted in preparing...\nDo you accept this offer?\n[Yes]/[No]\n":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -547,11 +606,29 @@ def help_spider():
             sys.stdout.flush()
         spider_quiztime()
     else:
-        for char in "\n'GROSS NOPE'\n'NOT HAPPENING'\nYou say outloud!!\nYou quick reaction has offended the Spider!!\n....\nThe Spider dashes towards you spinning you up in a web\n....\n......you scream HELP......\nThe cat MEOWS in the distance...\n\nYou are dead.\n":
+        for char in "\n'GROSS NOPE'\n'NOT HAPPENING'\nYou say outloud!!\nYou quick reaction has offended the Spider!!\n....\nThe Spider dashes towards you spinning you up in a web\n....\n......you scream HELP......\nThe cat MEOWS in the distance...\n":
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
         playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
 
 def help_wasp():
@@ -560,15 +637,45 @@ def help_wasp():
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       SPLAT!     \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
     playsound.playsound('splat.wav', False)
     time.sleep(1.5)
     playsound.playsound('squeaks.wav', False)
     time.sleep(1.5)
     playsound.playsound('dead.wav', False)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       DEAD!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
     time.sleep(1.5)
     end_game()
 def go_option3():  
-    for char in "\n\nYou run to the bottom of the velvet curtains who look like\ntheyve seen better days....\nBillows of dust come flying off as you scale\nthe curtain to the top trying not to\nchoke to get a better vantage point....\nYou see a web on the window sill,\nwhere a Spider is being attacked by a\nmean looking Wasp.\n\nWho do you want to help?\n[Spider]/[Wasp]\n":
+    for char in "\n\nYou run to the bottom of the velvet curtains who look like\ntheyve seen better days....\nBillows of dust come flying off as you scale\nthe curtain to the top trying not to\nchoke as you get a better vantage point....\nYou see a web on the window sill,\nwhere a Spider is being attacked by a\nmean looking Wasp.\n\nWho do you want to help?\n[Spider]/[Wasp]\n":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -625,11 +732,41 @@ def daddy_lose():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       SPLAT!     \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         playsound.playsound('splat.wav', False)
         time.sleep(1.5)
         playsound.playsound('squeaks.wav', False)
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         time.sleep(1.5)
         end_game()
     else:
@@ -653,11 +790,42 @@ def daddy_help():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       SPLAT!     \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         playsound.playsound('splat.wav', False)
         time.sleep(1.5)
         playsound.playsound('squeaks.wav', False)
         time.sleep(1.5)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         playsound.playsound('dead.wav', False)
+        print("\n")
         end_game()
     else: 
         print("\n\n")
@@ -670,6 +838,16 @@ def daddy_help():
 # DADDY LONGLEGS QUIZ
 # Question 3:
 def daddy_quiz3():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     daddy_score = 2
     daddy_answer3 = input("How many species of Daddy Longlegs are there in the world?\n[A: 10,000] \n[B: 100]\n[C: 500]\nAnswer: \n")
     if daddy_answer3 == "A" or daddy_answer3 == "a" or daddy_answer3 == "10,000" or daddy_answer3 == "10000":
@@ -698,6 +876,16 @@ def daddy_quiz3():
         daddy_lose()
 # Question 2:
 def daddy_quiz2():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     daddy_score = 1
     daddy_answer2 = input("How old are Daddy Longlegs as a species? \n[A: 100 million years]\n[B: 1 year]\n[C: 400 million years]\nAnswer: \n")
     if daddy_answer2 == "c" or daddy_answer2 == "C" or daddy_answer2 == "400 million years" or daddy_answer2 == "400" or daddy_answer2 == "400 Million Years" or daddy_answer2 == "400 MILLION YEARS" or daddy_answer2 == "400 Million years":
@@ -724,6 +912,16 @@ def daddy_quiz2():
         daddy_lose()
 # Question 1:
 def daddy_quiz1():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     daddy_score = 0
     daddy_answer1 = input("Are Daddy Longlegs Spiders?\n[A: Yes]\n[B: No]\nAnswer: \n")
     if daddy_answer1 == "b" or daddy_answer1 == "B" or daddy_answer1 == "No" or daddy_answer1 == "no" or daddy_answer1 == "No" or daddy_answer1 == "N"or daddy_answer1 == "n":
@@ -808,9 +1006,39 @@ def gerbil_choice():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       SPLAT!     \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         playsound.playsound('splat.wav', False)
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         end_game()
     elif gerbil_a_b == "A" or gerbil_a_b == "a" or gerbil_a_b == "B" or gerbil_a_b == "b" and trust_gerbil == "N":
         print("Very wise indeed... That pesky Gerbil wasnt to be trusted!!\nYou now make your way to the entrance\n")
@@ -819,22 +1047,64 @@ def gerbil_choice():
         print("I do not recognise that option. Please check your spelling and try again")
         gerbil_choice()
 def gerbil_quiz_3():
-    for char in "'HMMMM...Who'd of guessed it...?!\nYou have made to the last quiz...'\nNow Percy is looking even more annoyed by you...\n":
+    for char in "'HMMMM...Who'd of guessed it...?!\nYou have made to the last quiz...'\nNow Percy is looking at you even more annoyed...\n":
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_gerbil_3 = input("Can you name the country located in West Africa?\n[A: Kenya]\n[B: Ethiopia]\n[C: Ghana]\nAnswer: \n")
     if response_gerbil_3 == "A" or response_gerbil_3 == "a" or response_gerbil_3 == "ENTER":
         playsound.playsound('wrong.wav', False)
         print("WRONG!!!!\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_gerbil_3 == "B" or response_gerbil_3 == "b" or response_gerbil_3 == "ENTER":
         playsound.playsound('wrong.wav', False)
         print("WRONG!!!!\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        time.sleep(1.5)
+        print("\n")
         end_game()
     elif response_gerbil_3 == "C" or response_gerbil_3 == "c" or response_gerbil_3 == "ENTER":
         playsound.playsound('correct.wav', False)
@@ -849,6 +1119,16 @@ def gerbil_quiz_2():
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_gerbil_2 = input("Who is the most popular DC comic character?\n[A: Batman]\n[B: Superman]\n[C: Wonder Woman]\nAnswer: \n")
     if response_gerbil_2 == "A" or response_gerbil_2 == "a" or response_gerbil_2 == "ENTER":
         playsound.playsound('correct.wav', False)
@@ -860,12 +1140,44 @@ def gerbil_quiz_2():
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_gerbil_1 == "C" or response_gerbil_1 == "c" or response_gerbil_1 == "ENTER":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     else:
         print("I do not recognise that option. Please check your spelling and try again")
@@ -882,6 +1194,16 @@ def gerbil_quiz_1():
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_gerbil_1 = input("Which of these following Disney characters is a prince?\n[A: Charming]\n[B: Mark]\n[C: Jorneal]\nAnswer: \n")
     if response_gerbil_1 == "A" or response_gerbil_1 == "a" or response_gerbil_1 == "Charming":
         playsound.playsound('correct.wav', False)
@@ -893,12 +1215,44 @@ def gerbil_quiz_1():
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_gerbil_1 == "C" or response_gerbil_1 == "c" or response_gerbil_1 == "Jorneal":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nLooks like youre WRONG!\n")
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     else:
         print("I do not recognise that option. Please check your spelling and try again")
@@ -931,6 +1285,21 @@ def dog_cat_choice():
         playsound.playsound('squeaks.wav', False)
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         time.sleep(1.5)
         end_game()
     else:
@@ -973,6 +1342,21 @@ def dog_escape():
     print(" --------------------------------------------------------------------------")
     print("\n\n")
     playsound.playsound('dead.wav', False)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       DEAD!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
     time.sleep(1.5)
     playsound.playsound('squeaks.wav', False)
     time.sleep(1.5)
@@ -1025,12 +1409,43 @@ def dog_quiz_3():
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_dog_3 = input("How many teeth does a normal, adult dog possess?\n[A: 38]\n[B: 42]\n[C: 46]\nAnswer: \n")
     if response_dog_3 == "A" or response_dog_3 == "a" or response_dog_3 == "38":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
-        time.sleep(2)
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
+        end_game()
     elif response_dog_3 == "B" or response_dog_3 == "b" or response_dog_3 == "42":
         playsound.playsound('correct.wav', False)
         print("CORRECT {}!!\nYou now climb onto the dog's back.\n...\nYou now really want to get away\n".format(name))
@@ -1039,8 +1454,29 @@ def dog_quiz_3():
     elif response_dog_3 == "C" or response_dog_3 == "c" or response_dog_3 == "46":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
-        time.sleep(2)
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
+        end_game()
     else:
         print("I do not recognise that option. Please check your spelling and try again")
         dog_quiz_3()
@@ -1051,18 +1487,68 @@ def dog_quiz_2():
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_dog_2 = input("Name the most popular dog breed in the world:\n[A: Corgi]\n[B: Border Collie]\n[C: Labrador]\nAnswer: \n")
     if response_dog_2 == "A" or response_dog_2 == "a" or response_dog_2 == "Corgi" or response_dog_2 == "corgi":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
-        time.sleep(2)
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_dog_2 == "B" or response_dog_2 == "b" or response_dog_2 == "Border Collie":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
-        time.sleep(2)
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_dog_2 == "C" or response_dog_2 == "c" or response_dog_2 == "Labrador":
         playsound.playsound('correct.wav', False)
@@ -1080,12 +1566,42 @@ def dog_quiz_1():
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     response_dog_1 = input("Which of these characters is a Disney dog?\n[A: Mickey]\n[B: Pluto]\n[C: Donald]\nAnswer: \n")
     if response_dog_1 == "A" or response_dog_1 == "a" or response_dog_1 == "Mickey":
         playsound.playsound('wrong.wav', False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
-        time.sleep(2)
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     elif response_dog_1 == "B" or response_dog_1 == "b" or response_dog_1 == "Pluto":
         playsound.playsound('correct.wav', False)
@@ -1096,7 +1612,26 @@ def dog_quiz_1():
         playsound.playsound('wrong.wav', False)
         print("UH OH...\nWrong answer\nYou sacrificed your life to be the cat's tasty meal!\n\nGULPPPPP\n")
         time.sleep(1.5)
+       playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('squeaks.wav', False)
+        time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
         time.sleep(1.5)
         end_game()
     else:
@@ -1182,9 +1717,28 @@ def option_two():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
+        time.sleep(1.5)
+        playsound.playsound('cat_shreak.wav', False)
+        time.sleep(1.5)
         playsound.playsound('squeaks.wav', False)
         time.sleep(1.5)
         playsound.playsound('dead.wav', False)
+        print("\n")
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       DEAD!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     else:
         print("Sorry I do not recognise that option. Please check your spelling and try again!")
@@ -1216,11 +1770,30 @@ def reveal_yourself():
         sys.stdout.write(char)
         sys.stdout.flush()
     playsound.playsound('splat.wav', False)
-    print("Farewell my friend..")
-    time.sleep(1)
+    for char in "Farewell my friend..":
+        sleep(0.2)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+    time.sleep(1.5)
     playsound.playsound('squeaks.wav', False)
     time.sleep(1.5)
     playsound.playsound('dead.wav', False)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       DEAD!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
+    time.sleep(1.5)
     end_game()
 def enters_bathroom(): 
     print("\n")
@@ -1261,6 +1834,16 @@ def enters_bathroom():
         get_passed_unseen()
 #Question 3
 def quiz_game3():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     hole_score = 2
     h_answer_three = input("Which country bored the deepest man made hole in the world?\n[A: Russia]\n[B: Chile]\n[C: Belarus]\nAnswer: \n")
     if h_answer_three == "A" or h_answer_three == "a" or h_answer_three == "Russia" or h_answer_three == "russia":
@@ -1282,6 +1865,16 @@ def quiz_game3():
 #quiz_game3        
 #Question 2
 def quiz_game2():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     hole_score = 1
     h_answer_two = input("The Film called Holes' main character is called...\n[A: Stanley Stanley]\n[B: Stanley Yelnats]\n[C: Stan Lee]\nAnswer: \n")
     if h_answer_two == "B" or h_answer_two == "b" or h_answer_two == "Stanley Yalnats" or h_answer_two == "stanley yelnats":
@@ -1305,6 +1898,16 @@ def quiz_game2():
 #quiz_game2              
 #Question 1
 def quiz_game1():
+    print("\n")
+    print(" ---------------
+    print("|     ┏━━━┓     |")
+    print("|     ┃┏━┓┃     |")
+    print("|     ┗┛┏┛┃     | ")
+    print("|       ┃┏┛     |")
+    print("|       ┏┓      |")
+    print("|       ┗┛      |")
+    print(" ---------------
+    print("\n")
     hole_score = 0
     h_answer_one = input("In the meal Toad in the hole, what part of the meal is considered the hole\n[A: Yorkshire Pudding]\n[B: Sausage]\n[C:Gravy]\nAnswer: \n")
     if h_answer_one == "a" or h_answer_one == "A" or h_answer_one == "Yorkshire Pudding" or h_answer_one == "yorkshire pudding":
@@ -1348,6 +1951,22 @@ def right_hole():
     playsound.playsound('squeaks.wav', False)
     time.sleep(1.5)
     playsound.playsound('dead.wav', False)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       DEAD!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
+    time.sleep(1.5)
     end_game()
 def left_hole():
     print("\n")
@@ -1376,11 +1995,44 @@ def feast_path():
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
+    time.sleep(1.5)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       SPLAT!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
+    end_game()
     playsound.playsound('splat.wav', False)
     time.sleep(0.5)
     playsound.playsound('squeaks.wav', False)
     time.sleep(1.5)
     playsound.playsound('dead.wav', False)
+    print("\n")
+    print(" ------------------------------")
+    print("|   !!     !           !!      |
+    print("|           .  !   .           |")
+    print("|       .  /|     /\  ,    !!  |")    
+    print("|    !  |\/ |/\__/  \/|___     |")
+    print("|     __|                /     |")
+    print("|     \       DEAD!      \  !  |")
+    print("|!!   /       -----      _\    |")
+    print("|    /___  _  _         _\     |")
+    print("|       /,' \| \  /\|\ |       |")
+    print("|      /'    `  \/  ` \|    !! |")
+    print("|  !!          !          !    |")
+    print(" ------------------------------")
+    print("\n")
+    time.sleep(1.5)
     end_game()
 def continue_path():
     print("\n\n")
@@ -1388,7 +2040,7 @@ def continue_path():
     print("|                                                                          |")
     print("|                                      _.,_                                |")
     print("|        mummMmbliiinggg -          ,-'.' .`-,                             |")
-    print("|                                  ;; '. ' `. ;` - _                       |")
+    print("|            BURP!                 ;; '. ' `. ;` - _                       |")
     print("|                               _,-; ' ; `.  ,% .-,  -                     | ")
     print("|                        ,_.,-'`   ';; ; : ;%'  | |   \                    | ")
     print("|            ___  _._,-`'\            `'-`'  _.,' `.   )                   | ")
@@ -1563,6 +2215,23 @@ def start_game():
     elif start == "N" or start == "n" or start == "No" or start == "no" or start == "NO":
         playsound.playsound('cat_shreak.wav', False)
         playsound.playsound('squeaks.wav', False)
+        print("\n")
+        playsound.playsound('boo.wav', False)
+        print(" ------------------------------")
+        print("|   !!     !           !!      |
+        print("|           .  !   .           |")
+        print("|       .  /|     /\  ,    !!  |")    
+        print("|    !  |\/ |/\__/  \/|___     |")
+        print("|     __|                /     |")
+        print("|     \       BOOO!      \  !  |")
+        print("|!!   /       -----      _\    |")
+        print("|    /___  _  _         _\     |")
+        print("|       /,' \| \  /\|\ |       |")
+        print("|      /'    `  \/  ` \|    !! |")
+        print("|  !!          !          !    |")
+        print(" ------------------------------")
+        print("\n")
+        time.sleep(1.5)
         end_game()
     else:
         intro_error = print("'Sorry I dont understand, are you speaking to me in cat?! Eeek! Please try again!'")
@@ -1571,16 +2240,16 @@ def intro():
     custom_fig = Figlet(font='ogre')
     greeting = Figlet(font='small')
     print("")
-    print ("------------------------------------------------------------------------------------")
-    skip_intro = input("Would you like to skip the introduction? [Y]/[N]: ")
-    if skip_intro == "y" or skip_intro == "Y":
-        print ("------------------------------------------------------------------------------------")
-        start_game()
-    elif skip_intro == "n" or skip_intro == "N":
-        print ("------------------------------------------------------------------------------------")
-        intro()
-    else:
-        intro()
+    # print ("------------------------------------------------------------------------------------")
+    # skip_intro = input("Would you like to skip the introduction? [Y]/[N]: ")
+    # if skip_intro == "y" or skip_intro == "Y":
+    #     print ("------------------------------------------------------------------------------------")
+    #     start_game()
+    # elif skip_intro == "n" or skip_intro == "N":
+    #     print ("------------------------------------------------------------------------------------")
+    #     intro()
+    # else:
+    #     intro()
     playsound.playsound('pitterpatter.wav', False)
     print ("------------------------------------------------------------------------------------")
     print("------------------------------------------------------------------------------------")
