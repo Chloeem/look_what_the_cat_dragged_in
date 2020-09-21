@@ -33,7 +33,7 @@ def end_game():
     time.sleep(3)
     print("\n\n\n\n")
     print("------------------------------------------------------------------------------------")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(0.5)
     print("Would you like to play again? [Y]/[N]                                             ")
     time.sleep(1.5)
@@ -55,7 +55,7 @@ def end_game():
 # WINNER
 def you_won():
     time.sleep(1)
-    playsound.playsound('pitterpatter.wav', False)
+    playsound.playsound('sounds/pitterpatter.wav', False)
     print("\n")
     print("*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*<>*\n")
     time.sleep(1)
@@ -72,7 +72,7 @@ def you_won():
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(0.2)
     print("                        /")
     print("                       /")
@@ -107,14 +107,14 @@ def you_won():
 #OPTION THREE
 def after_moth_quiz():
     print("\n")
-    playsound.playsound('moth_laugh.wav', False)
+    playsound.playsound('sounds/moth_laugh.wav', False)
     for char in "\nThe Moth disappears for moment, giggling to herself maniacally\n'HEHEHEhehohohohehe...'\nAnd returns with a lettuce leaf\nShe gestures to give it to you\nYou look at her confused...\nDo you accept the random leaf offer?\n[Yes]/[No]\n":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
     # print("Moth gives you a lettuce leaf")
     # time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     leaf_offer = "@@@@"
     while leaf_offer.lower() != "yes" and leaf_offer.lower() != "no":
         leaf_offer = input("Answer: ")
@@ -125,7 +125,7 @@ def after_moth_quiz():
     tour_offer = "@@@@"
     while tour_offer.lower() != "yes" and tour_offer.lower() != "no":
         tour_offer = input("Answer: ")
-        playsound.playsound('moth_laugh.wav', False)
+        sounds/, False)
     if tour_offer.lower() == "yes":
         for char in "\nThe Moth starts giggling againn..\n'HEHEHEhehohohohehe...'\nShe turns to the toaster with the biggest grin on her mothy face\nand tells you this is her hilarious best friend\nPointing to the toaster\n...\nShe says it tells great jokes in the morning..":
             sleep(0.15)
@@ -176,11 +176,11 @@ def after_moth_quiz():
             print("|  !!          !          !    |")
             print(" ------------------------------")
             print("\n")
-            playsound.playsound('splat.wav', False)
+            sounds/, False)
             time.sleep(1.5)
-            playsound.playsound('squeaks.wav', False)
+            sounds/, False)
             time.sleep(1.5)
-            playsound.playsound('dead.wav', False)
+            sounds/, False)
             
             end_game()
     else:
@@ -271,14 +271,14 @@ def moth_quiztime():
                 user_answer = input(answers_moth[rquestion])
             if user_answer.lower() == good_answer_moth[rquestion]:
                 wins += 1
-                playsound.playsound('correct.wav', False)
+                sounds/, False)
                 print("Correct answer!")
                 time.sleep(1.5)
                 print(wikimoth[rquestion])
                 time.sleep(3.5)
             else:
                 losses += 1
-                playsound.playsound('wrong.wav', False)
+                sounds/, False)
                 print("Wrong answer")
                 time.sleep(1.5)
                 print("The correct answer was ",good_answer_moth[rquestion].capitalize())
@@ -300,16 +300,16 @@ def moth_quiztime():
                 q_num = 1
                 time.sleep(1.5)
     if wins < 3:
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("Clearly you know nothing about moths or butterflies\n....\n")
         time.sleep(1.5)
         print("I cannot help you")
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         end_game()
 
 def after_spider_quiz():
     print("\n")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     for char in "\nAfter hard swallowing your shared Wasp dinner and\nmanaging to keep it down in your stomach,\nyou crack a smile on your fuzzy face as the Spider\ntakes you into the kitchen counter to look around.\nWhat do you want to explore?\n[Espresso Machine]\n[Sink]\n[Cat flap]\n":
         sleep(0.15)
         sys.stdout.write(char)
@@ -334,8 +334,8 @@ def after_spider_quiz():
         print("|                                                                 |")
         print(" -----------------------------------------------------------------")
         print("\n\n")
-        playsound.playsound('drink.wav', True)
-        playsound.playsound('energized.wav', False)
+        sounds/, True)
+        playsound.playsound('sounds/energized.wav', False)
         for char in "\nWo0o0OOOo0ooooOo0o0oo00ooooooo...\nYou try the coffee, feeling SUPER energised and invinsible\nYou eyes dart around frantically looking for clues...\n....\nYou notice a moth in a bag of flour\nDo you want to Speak to moth?\n[Yes]/[No]\n":
             sleep(0.15)
             sys.stdout.write(char)
@@ -349,7 +349,7 @@ def after_spider_quiz():
                 sys.stdout.write(char)
                 sys.stdout.flush()
             time.sleep(2)
-            playsound.playsound('gameshow.wav', False)
+            playsound.playsound('sounds/gameshow.wav', False)
             print("\n\n")
             print(" --------------------------------------------------------------------------------------------------")
             print("|                                                                                                  |")
@@ -377,7 +377,7 @@ def after_spider_quiz():
             print("|                                               '..'                                               |")
             print("|                                                                                                  |")
             print(" --------------------------------------------------------------------------------------------------")
-            playsound.playsound('hi.wav', False)
+            sounds/, False)
             print("\n\n")
             time.sleep(1.5)
             for char in "\n\n###############################\n##         MOTH QUIZ         ##\n###############################\n\nTry to answer 3 moth related questions.\n\n":
@@ -400,14 +400,14 @@ def after_spider_quiz():
         while option.lower() != "yes" and option.lower() != "no":
             option = input("Answer: ")
             if option.lower() == "no":
-                playsound.playsound('slimy.wav', False)
+                playsound.playsound('sounds/slimy.wav', False)
                 for char in "\nGrime is life! You choose to stay n chill\nThinking to yourself 'I love this place!'\n....\nWRONG MOUSEY....You fall sick and say hello to that Wasp again...\n\n":
                     sleep(0.15)
                     sys.stdout.write(char)
                     sys.stdout.flush()
-                playsound.playsound('squeaks.wav', False)
+                sounds/, False)
                 time.sleep(1.5)
-                playsound.playsound('dead.wav', False)
+                sounds/, False)
                 print("\n")
                 print(" ------------------------------")
                 print("|   !!     !           !!      |")
@@ -427,7 +427,7 @@ def after_spider_quiz():
             else:
                 after_spider_quiz()
     elif explore.lower() == "cat flap":
-        playsound.playsound('cat_purr.wav', False)
+        sounds/, False)
         for char in "\nbut you have to jump down from the counter\nCat flap is locked, it uses the cats microchip to open\nThats the only way out :(\n":
             sleep(0.15)
             sys.stdout.write(char)
@@ -535,7 +535,7 @@ def spider_quiztime():
                 user_answer = input(answers[rquestion])
             if user_answer.lower() == good_answer[rquestion]:
                 wins += 1
-                playsound.playsound('correct.wav', False)
+                sounds/, False)
                 print("Correct answer!")
                 time.sleep(1.5)
                 print(wikispider[rquestion])
@@ -543,7 +543,7 @@ def spider_quiztime():
                 print()
             else:
                 losses += 1
-                playsound.playsound('wrong.wav', False)
+                sounds/, False)
                 print("Wrong answer")
                 time.sleep(1.5)
                 print("The correct answer was ",good_answer[rquestion].capitalize())
@@ -564,25 +564,25 @@ def spider_quiztime():
                 q_num = 1
                 time.sleep(1.5)
     if wins < 3:
-        playsound.playsound('boo.wav', False)
+        playsound.playsound('sounds/boo.wav', False)
         print("BOOO Mousey! You do not know much about spiders..Pfft! ")
         time.sleep(1.5)
         print("I cannot help you...I guess you're stuck here forever")
         time.sleep(1.5)
-        playsound.playsound('cat_purr.wav', True)
+        sounds/, True)
         time.sleep(1.5)
-        playsound.playsound('cat_meow.wav', True)
+        playsound.playsound('sounds/cat_meow.wav', True)
         time.sleep(1.5)
-        playsound.playsound('attack.wav', False)
+        playsound.playsound('sounds/attack.wav, False)
         time.sleep(1.5)
-        playsound.playsound('cat_shreat.wav', False)
+        playsound.playsound('sounds/cat_shreat.wav', False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         end_game()
 
 def help_spider():
     print("\n\n")
-    playsound.playsound('hi.wav', False)
+    sounds/, False)
     print(" -----------------------------------")
     print("|                 |                 |")
     print("|                 |                 |")
@@ -598,8 +598,7 @@ def help_spider():
     print("|              `     '              |")
     print("|                                   |")
     print(" -----------------------------------")
-    print("\n\n")
-    playsound.playsound('attack.wav', False)
+    printsounds/attacks.wav, False)
     for char in "\nThe three of you start brawling dust is flying\nYou make a sudden jump in the wasps direction\npinning him to the window, he cant get away...\nThe Spider karate chops the Wasp with her 8 legs\n\n!!SUPER POWER KICK!!\n\nThe wasp is DEAD!!!\nThe Spider offers you some of the Wasp\nto feast on as thank you.....\nHis fresh delicacy that you assisted in preparing...\nDo you accept this offer?\n[Yes]/[No]\n":
         sleep(0.15)
         sys.stdout.write(char)
@@ -612,7 +611,7 @@ def help_spider():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('gameshow.wav', False)
+        sounds/, False)
         for char in "\n\n###############################\n##        SPIDER QUIZ        ##\n###############################\n\nTry to answer 3 spider related questions\n\n":
             sleep(0.15)
             sys.stdout.write(char)
@@ -623,9 +622,9 @@ def help_spider():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -665,11 +664,11 @@ def help_wasp():
     print("|  !!          !          !    |")
     print(" ------------------------------")
     print("\n")
-    playsound.playsound('splat.wav', False)
+    playsound.playsound('sounds/splat.wav', False)
     time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    playsound.playsound('sounds/squeaks.wav', False)
     time.sleep(1.5)
-    playsound.playsound('dead.wav', False)
+    sounds/, False)
     print("\n")
     print(" ------------------------------")
     print("|   !!     !           !!      |")
@@ -703,7 +702,7 @@ def go_option3():
 # DADDY EXTRA HELP IF USER LOSES
 def daddy_lose():
     print("\n\n")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     for char in "'Too bad.. I am kind of insulted that\nyou know so little about us Daddy Longlegs..\nbut im feeling generous so i'll give you\na long list of places to look..\n[A: Behind the paint tins]\n[B: Next to the bass guitar amp]\n[C: By the crabbing nets]\n[D: Derelict dollshouse]\n[E: Leaf Blower]\nAnswer: ":
         sleep(0.15)
         sys.stdout.write(char)
@@ -732,7 +731,7 @@ def daddy_lose():
         daddy_quiz1()
     elif places_choice == "C" or places_choice == "c" or places_choice == "by the crabbing nets" or places_choice == "By the crabbing nets" or places_choice == "By The Crabbing Nets" or places_choice == "BY THE CRABBING NETS" or places_choice == "crabbing nets" or places_choice == "Crabbing nets" or places_choice == "Crabbing Nets" or places_choice == "CRABBING NETS":
         print("\n")
-        playsound.playsound('cat_purr.wav', False)
+        playsound.playsound('sounds/cat_purr.wav', False)
         for char in "\nYou thank the Daddy Longlegs and begin on your way..\nIn the conservatory you see some large crabbing nets\ndraped over some old cardboard boxes..\nWhat's that you can hear...\npurrrrrrr!!\nPURRRRRR..!!\nIt seems to be getting closer...\n\nRUN RUN! BEFORE THE CAT GETS YOU!\n\n....You run with all your might towards those crabbing nets and boxes\n....\nClimbing up the net as fast as you can\nto see if the window is open...\n....\nThe cat 'MEEOOWWWWS' below you..\nOH NO THE WINDOW IS TOO HIGH\n....\nSuddenly there is a loud BANGING and calls of 'Oh kitty cat, diner time!'\nThe cat runs out the room\nYou dash back down the crabbing nets to the floor and back\nout the room!\nPHEW! That was so close!\n\nYou walk back to the Daddy Longlegs\n...\n'Hi Mousey, lets try again with that quiz...'\n":
             sleep(0.15)
             sys.stdout.write(char)
@@ -760,11 +759,11 @@ def daddy_lose():
         print("|  !!          !          !    |")
         print(" ------------------------------")
         print("\n")
-        playsound.playsound('splat.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -795,7 +794,7 @@ def daddy_help():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         you_won()
     elif daddy_clues == "A" or daddy_clues == "a" or daddy_clues == "Leaf blower" or daddy_clues == "leaf blower" or daddy_clues == "Leaf Blower" or daddy_clues == "LEAF BLOWER":
         leaf_blower = "\nYou spot the leaf blower up on the sideboard\nIt looks so far away from down on the ground..\nYou shimmy your way up the back...\nDigging your little claws in for your life..\n Once you get to the top you manage to spot a toad\nwho with a sinister grin on his face offers\nto sit on the button for you help...\nYou scramble to the opening of the leaf blower\n...\The open window in sight...\nThe toad says '1....\n....2\n....\n...3!!!\nHe sits on the button\nYou fly through the air....\n\nUGH OHHHHHHH\n\nYou miss\nand\n....\nSPLAAAAAATTTT!!!\n.....\n....."
@@ -818,9 +817,9 @@ def daddy_help():
         print("|  !!          !          !    |")
         print(" ------------------------------")
         print("\n")
-        playsound.playsound('splat.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
         print("\n")
         print(" ------------------------------")
@@ -837,7 +836,7 @@ def daddy_help():
         print("|  !!          !          !    |")
         print(" ------------------------------")
         print("\n")
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         end_game()
     else: 
@@ -866,7 +865,7 @@ def daddy_quiz3():
     if daddy_answer3 == "A" or daddy_answer3 == "a" or daddy_answer3 == "10,000" or daddy_answer3 == "10000":
         daddy_score += 1
         time.sleep(1.5)
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Correct!")
         time.sleep(1.5)
         print("Fun fact: There might be as many as 10,000 species of daddy longlegs, with 6000 to 7000 currently described. We’re describing new ones all the time, they are generally very, very bad at getting around, so they tend to have lots of species, because the minute a river flows between two different populations or a mountain rises and cuts one population off from another population, they split into two new species.")
@@ -877,9 +876,8 @@ def daddy_quiz3():
         print("\n\n")
         daddy_help()
     else:
-        playsound.playsound('wrong.wav', False)
-        time.sleep(1.5)
-        playsound.playsound('boo.wav', False)
+        sounds/, False)
+        time.sleep(1sounds/boo.wav, False)
         print("Booooo! WRONG!")
         time.sleep(1.5)
         print("Score: ", daddy_score)
@@ -912,7 +910,7 @@ def daddy_quiz2():
     daddy_answer2 = input("How old are Daddy Longlegs as a species? \n[A: 100 million years]\n[B: 1 year]\n[C: 400 million years]\nAnswer: ")
     if daddy_answer2 == "c" or daddy_answer2 == "C" or daddy_answer2 == "400 million years" or daddy_answer2 == "400" or daddy_answer2 == "400 Million Years" or daddy_answer2 == "400 MILLION YEARS" or daddy_answer2 == "400 Million years":
         daddy_score += 1
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         time.sleep(1.5)
         print("Look at you go! Maybe ill let you be\nan honourary Daddy Longleg {}".format(name))
         time.sleep(1.5)
@@ -922,9 +920,8 @@ def daddy_quiz2():
         print("\n\n")
         daddy_quiz3()
     else:
-        playsound.playsound('wrong.wav', False)
-        time.sleep(1.5)
-        playsound.playsound('boo.wav', False)
+        sounds/, False)
+        time.sleep(1sounds/boo.wav, False)
         print("Booooo! WRONG!")
         time.sleep(1.5)
         print("Score: ", daddy_score)
@@ -957,7 +954,7 @@ def daddy_quiz1():
     if daddy_answer1 == "b" or daddy_answer1 == "B" or daddy_answer1 == "No" or daddy_answer1 == "no" or daddy_answer1 == "No" or daddy_answer1 == "N"or daddy_answer1 == "n":
         time.sleep(1.5)
         daddy_score += 1
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Yes! Wow im impressed {}!".format(name))
         time.sleep(1.5)
         print("Score: ", daddy_score)
@@ -966,9 +963,8 @@ def daddy_quiz1():
         print("\n\n")
         daddy_quiz2()
     else:
-        playsound.playsound('wrong.wav', False)
-        time.sleep(1.5)
-        playsound.playsound('boo.wav', False)
+        sounds/, False)
+        time.sleep(1sounds/boo.wav, False)
         print("Booooo! WRONG!")
         time.sleep(1.5)
         print("Score: ", daddy_score)
@@ -1013,7 +1009,7 @@ def daddy_longlegs():
     print("|                                           |")
     print(" -------------------------------------------")
     print("\n\n")
-    playsound.playsound('hello.wav', False)
+    playsound.playsound('sounds/hello.wav', False)
     time.sleep(1.5)
     daddy_hello = "'Oh hello you fuzzy little thing\nOh you want my help!\nFirst things first, us Daddy Longlegs are\nvery proud bugs especially of our long\nlooooonggggggg legs.\nSo you must answer some questions!\nGet them right and i'll help you get out of here!' "
     for char in daddy_hello:
@@ -1021,7 +1017,7 @@ def daddy_longlegs():
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
-    playsound.playsound('gameshow.wav', False)
+    sounds/, False)
     print("\n\n")
     print("\n\n###############################\n##        DADDY LONGLEGS QUIZ        ##\n###############################\n\n")
     time.sleep(2)
@@ -1059,9 +1055,9 @@ def gerbil_choice():
         print("|  !!          !          !    |")
         print(" ------------------------------")
         print("\n")
-        playsound.playsound('splat.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1101,11 +1097,11 @@ def gerbil_quiz_3():
     print("\n")
     response_gerbil_3 = input("Can you name the country located in West Africa?\n[A: Kenya]\n[B: Ethiopia]\n[C: Ghana]\nAnswer: ")
     if response_gerbil_3 == "A" or response_gerbil_3 == "a" or response_gerbil_3 == "ENTER":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("WRONG!!!!\nLooks like your luck has ran out!\n")
-        playsound.playsound('cat_meow.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1124,12 +1120,12 @@ def gerbil_quiz_3():
         time.sleep(1.5)
         end_game()
     elif response_gerbil_3 == "B" or response_gerbil_3 == "b" or response_gerbil_3 == "ENTER":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("WRONG!!!!\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
-        playsound.playsound('cat_meow.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1148,7 +1144,7 @@ def gerbil_quiz_3():
         print("\n")
         end_game()
     elif response_gerbil_3 == "C" or response_gerbil_3 == "c" or response_gerbil_3 == "ENTER":
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("CORRECT!!\nWELL DONE\n3 for 3!!\n")
         gerbil_choice()
     else:
@@ -1172,17 +1168,17 @@ def gerbil_quiz_2():
     print("\n")
     response_gerbil_2 = input("Who is the most popular DC comic character?\n[A: Batman]\n[B: Superman]\n[C: Wonder Woman]\nAnswer: ")
     if response_gerbil_2 == "A" or response_gerbil_2 == "a" or response_gerbil_2 == "ENTER":
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("You guessed it right!!\nOne more question!!\n")
         time.sleep(1.5)
         gerbil_quiz_3()
     elif response_gerbil_2 == "B" or response_gerbil_2 == "b" or response_gerbil_2 == "ENTER":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
-        playsound.playsound('cat_meow.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1201,12 +1197,12 @@ def gerbil_quiz_2():
         time.sleep(1.5)
         end_game()
     elif response_gerbil_1 == "C" or response_gerbil_1 == "c" or response_gerbil_1 == "ENTER":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
-        playsound.playsound('cat_meow.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1229,7 +1225,7 @@ def gerbil_quiz_2():
         gerbil_quiz_2()
 
 def gerbil_quiz_1():
-    playsound.playsound('gameshow.wav', False)
+    sounds/, False)
     for char in "\n\n###############################\n##        GERBIL QUIZ        ##\n###############################\n\n":
         sleep(0.2)
         sys.stdout.write(char)
@@ -1251,15 +1247,15 @@ def gerbil_quiz_1():
     print("\n")
     response_gerbil_1 = input("Which of these following Disney characters is a prince?\n[A: Charming]\n[B: Mark]\n[C: Jorneal]\nAnswer: ")
     if response_gerbil_1 == "A" or response_gerbil_1 == "a" or response_gerbil_1 == "Charming":
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("You guessed it right!!\nYou live to see the next day!!\nTwo more questions to go!!\n")
         time.sleep(1.5)
         gerbil_quiz_2()
     elif response_gerbil_1 == "B" or response_gerbil_1 == "b" or response_gerbil_1 == "Mark":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nLooks like your luck has ran out!\n")
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1278,10 +1274,10 @@ def gerbil_quiz_1():
         time.sleep(1.5)
         end_game()
     elif response_gerbil_1 == "C" or response_gerbil_1 == "c" or response_gerbil_1 == "Jorneal":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nLooks like youre WRONG!\n")
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1315,7 +1311,7 @@ def dog_cat_choice():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('cat_shreak.wav', False)
+        playsound.playsound('sounds/cat_shreak.wav', False)
         time.sleep(1.5)
         for char in "WOOHOO....\nYOU MADE IT OUT!\n":
             sleep(0.2)
@@ -1327,11 +1323,11 @@ def dog_cat_choice():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('dog_growl.wav', False)
+        playsound.playsound('sounds/dog_growl.wav', False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1389,7 +1385,7 @@ def dog_escape():
     print(" --------------------------------------------------------------------------")
     print("\n\n")
     time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
     for char in "Do you promise to sit with Lenny, his kid\nowner Andy and watch Shrek 1 together.\nThen as soon as they fall asleep you make a mad\ndash for your escape or nip him and run for it now?\n[A: Promise to sit with Lenny]\n[B: Nip him and run]\nAnswer: ":
         sleep(0.2)
@@ -1402,7 +1398,7 @@ def dog_escape():
             sys.stdout.write(char)
             sys.stdout.flush()
         print("\n\n")
-        playsound.playsound('hi.wav', False)
+        playsound.playsound('sounds/hi.wav', False)
         print(" -------------------------------------------------------")
         print("|                        Hi i'm Percy                   |")
         print("|         ) _     _    /                                |")
@@ -1420,9 +1416,9 @@ def dog_escape():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('ouch.wav', False)
+        playsound.playsound('sounds/ouch.wav', False)
         time.sleep(1)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
         for char in "You can feel the dog's breath beating on your back\nand the cat is a few metres ahead\nYou must make a choice in a split second\n....\n":
             sleep(0.2)
@@ -1435,7 +1431,7 @@ def dog_escape():
 #dog_escape()
 
 def dog_quiz_3():
-    playsound.playsound('cat_purr.wav', False)
+    sounds/, False)
     for char in "I see you have made it to the final step of this quiz.\nLAST ROUND\nGet this correct and I will help you!\nTime for the 3rd question!\n":
         sleep(0.2)
         sys.stdout.write(char)
@@ -1453,14 +1449,14 @@ def dog_quiz_3():
     print("\n")
     response_dog_3 = input("How many teeth does a normal, adult dog possess?\n[A: 38]\n[B: 42]\n[C: 46]\nAnswer: ")
     if response_dog_3 == "A" or response_dog_3 == "a" or response_dog_3 == "38":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1479,19 +1475,19 @@ def dog_quiz_3():
         time.sleep(1.5)
         end_game()
     elif response_dog_3 == "B" or response_dog_3 == "b" or response_dog_3 == "42":
-        playsound.playsound('correct.wav', False)
+        playsound.playsound('sounds/correct.wav', False)
         print("CORRECT {}!!\nYou now climb onto the dog's back.\n...\nYou now really want to get away\n".format(name))
         time.sleep(1.5)
         dog_escape()
     elif response_dog_3 == "C" or response_dog_3 == "c" or response_dog_3 == "46":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        playsound.playsound('sounds/dead.wav', False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1531,14 +1527,14 @@ def dog_quiz_2():
     print("\n")
     response_dog_2 = input("Name the most popular dog breed in the world:\n[A: Corgi]\n[B: Border Collie]\n[C: Labrador]\nAnswer: ")
     if response_dog_2 == "A" or response_dog_2 == "a" or response_dog_2 == "Corgi" or response_dog_2 == "corgi":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1557,14 +1553,14 @@ def dog_quiz_2():
         time.sleep(1.5)
         end_game()
     elif response_dog_2 == "B" or response_dog_2 == "b" or response_dog_2 == "Border Collie":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1583,7 +1579,7 @@ def dog_quiz_2():
         time.sleep(1.5)
         end_game()
     elif response_dog_2 == "C" or response_dog_2 == "c" or response_dog_2 == "Labrador":
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Correct Mousey!!\nYou have survived for now\n....\nLast question remaining\n")
         time.sleep(1.5)
         dog_quiz_3()
@@ -1593,7 +1589,7 @@ def dog_quiz_2():
 #dog_quiz_2()
 
 def dog_quiz_1():
-    playsound.playsound('gameshow.wav', False)
+    sounds/, False)
     for char in "\n\n###############################\n##         DOG QUIZ        ##\n###############################\n\nWelcome to the wonderful world of canine conundrums.\nThink very well and answer wisely.\nThese questions really are a matter of life or death.\nAny wrong answer and you will be a fine dinner.\n\n":
         sleep(0.2)
         sys.stdout.write(char)
@@ -1610,14 +1606,14 @@ def dog_quiz_1():
     print("\n")
     response_dog_1 = input("Which of these characters is a Disney dog?\n[A: Mickey]\n[B: Pluto]\n[C: Donald]\nAnswer: ")
     if response_dog_1 == "A" or response_dog_1 == "a" or response_dog_1 == "Mickey":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("NOOOOOOOOOOOOOOOO\nWrong answer!!\nYou sacrificed your life to be the cat's tasty meal!")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1636,19 +1632,19 @@ def dog_quiz_1():
         time.sleep(1.5)
         end_game()
     elif response_dog_1 == "B" or response_dog_1 == "b" or response_dog_1 == "Pluto":
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Well done {}, you're a Disney fan I see!\nYou have survived for now. 2 questions left\n".format(name))
         time.sleep(1.5)
         dog_quiz_2()
     elif response_dog_1 == "C" or response_dog_1 == "c" or response_dog_1 == "Donald":
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("UH OH...\nWrong answer\nYou sacrificed your life to be the cat's tasty meal!\n\nGULPPPPP\n")
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1682,7 +1678,7 @@ def response_ko_a():
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('happy_dog.wav', False)
+        playsound.playsound('sounds/happy_dog.wav', False)
         time.sleep(2)
         print("\n\n")
         print(" --------------------------------------------------------------------------")
@@ -1707,8 +1703,7 @@ def response_ko_a():
         for char in "You are safe for now but there is no sign of the cat\nleaving the room... You wait and wait..\nAND\n...\nwait\n....\n\nYou tummy starts rumbling loudly\n\n....\n":
             sleep(0.2)
             sys.stdout.write(char)
-            sys.stdout.flush()
-        playsound.playsound('boo.wav', False)
+            sys.stdout.flussounds/boo.wav, False)
         time.sleep(2)
         beginning_options()
     else:
@@ -1717,15 +1712,14 @@ def response_ko_a():
 #response_ko_a()
 # USER IS BEHIND THE TV - THEY NEED TO GET AWAY FROM THE CAT
 def option_two():
-    playsound.playsound('cat_purr.wav', False)
+    sounds/, False)
     for char in "\nYou pop your little head around the side of the Tv\nYou see the lazy plump kitty cat fast asleep snoozing in the sun again.\nThere is no straight escape out the room,\nthe fat cat is lay in front of the doorway\n....\nHMMMMMM...\n....\n'OHHHH..what's that?', you think, as you spot a Tech Deck on the floor..\nMaybe an escape?\nYou know that you are a lot more agile and faster than the cat.\nBut you need to decide if luck is on your side tonight?\n\n":
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
     response_a = input("Choices choices..Do you smack the cat over its head to KO the cat\nor start practising a pop it - shove it on the Tech Deck?\n[A: Smack the cat over its head to KO the cat]\n[B: Start practising a pop it - shove it]\nAnswer: ")
     if response_a == "A" or response_a == "a" or response_a == "smack the cat over its head to KO the cat":
-        print("\n")
-        playsound.playsound('attack.wav', False)
+        prinsounds/attacks.wav, False)
         for char in "\nOHHHHH silly mouse!!\nYou may be the prize fighter back in your small mousey world...\nBut your puny rodent arms are not strong enough to KO a Maine Coone!!\nYou start panicking...What do you do NOW?!\n":
             sleep(0.2)
             sys.stdout.write(char)
@@ -1733,7 +1727,7 @@ def option_two():
         time.sleep(1.5)
         response_ko_a()
     elif response_a == "B" or response_a == "b" or response_a == "start practising a pop it - shove it":
-        playsound.playsound('tech_deck.wav', False)
+        playsound.playsound('sounds/tech_deck.wav', False)
         for char in "\nGO LITTLE MOUSEY, you've got some skills!":
             sleep(0.2)
             sys.stdout.write(char)
@@ -1744,17 +1738,17 @@ def option_two():
             sys.stdout.write(char)
             sys.stdout.flush()
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         for char in "\nYou have now woken the cat and he's not happy....\n.......\nUHHHH OH..You have met your brutal demise":
             sleep(0.2)
             sys.stdout.write(char)
             sys.stdout.flush()
         time.sleep(1.5)
-        playsound.playsound('cat_shreak.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
         time.sleep(1.5)
-        playsound.playsound('dead.wav', False)
+        sounds/, False)
         print("\n")
         print(" ------------------------------")
         print("|   !!     !           !!      |")
@@ -1787,7 +1781,7 @@ def get_passed_unseen():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
-        playsound.playsound('happy_dog.wav', False)
+        playsound.playsound('sounds/happy_dog.wav', False)
         print("\n\n")
         print(" --------------------------------------------------------------------------")
         print("|                                                                          |")
@@ -1810,23 +1804,23 @@ def get_passed_unseen():
         option_two()
 def reveal_yourself():
     print("\n")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
-    playsound.playsound('woman_scream.wav', False)
+    playsound.playsound('sounds/woman_scream.wav', False)
     time.sleep(1.5)
     for char in "You switch on the rodent version of puppy dog eyes and squeak up at the lady.\nSurely she cant resist your charm {}.\nOH NO!!!\nShe HATES mice..\nShe's battered you with her hairbrush.\nR.I.P\n":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
-    playsound.playsound('splat.wav', False)
+    sounds/, False)
     for char in "Farewell my friend..":
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
-    playsound.playsound('dead.wav', False)
+    sounds/, False)
     print("\n")
     print(" ------------------------------")
     print("|   !!     !           !!      |")
@@ -1846,13 +1840,13 @@ def reveal_yourself():
     end_game()
 def enters_bathroom(): 
     print("\n")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     for char in "You take your cheese winnings, and carry on through the hole.\nYou end up in the upstairs bathroom, just in a crevice in the wall by the bath tub.\nThere is a woman removing her makeup in the mirror.\nShe smells of the mezcal, and is swaying slightly.\nBut she looks kind, you wonder that if you squeaked up that she'd help you. ":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
     print("\n\n")
-    playsound.playsound('drunk_woman.wav', False)    
+    playsound.playsound('sounds/drunk_woman.wav', False)    
     print(" -------------------------------------------------------- ")
     print("|                     ___                                | ")                    
     print("|                    //)))))        - hicCuPPPP!         |")
@@ -1878,11 +1872,11 @@ def enters_bathroom():
     print("\n\n")
     ask_for_help_or_run = input ("Do you want to take the risk? [Y/N]\nAnswer: ")
     if ask_for_help_or_run == "Y" or ask_for_help_or_run == "y" or ask_for_help_or_run == "yes":
-        playsound.playsound('hiccups.wav', False)
+        playsound.playsound('sounds/hiccups.wav', False)
         time.sleep(1.5)
         reveal_yourself()
     elif ask_for_help_or_run == "N" or ask_for_help_or_run == "n" or ask_for_help_or_run == "no":
-        laysound.playsound('hiccups.wav', False)
+        playsound.playsound('sounds/hiccups.wav', False)
         time.sleep(1.5)
         get_passed_unseen()
 #Question 3
@@ -1901,7 +1895,7 @@ def quiz_game3():
     h_answer_three = input("Which country bored the deepest man made hole in the world?\n[A: Russia]\n[B: Chile]\n[C: Belarus]\nAnswer: ")
     if h_answer_three == "A" or h_answer_three == "a" or h_answer_three == "Russia" or h_answer_three == "russia":
         hole_score += 1
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Correct!")
         print("Score: ", hole_score)
         print("You may continue on your journey through the hole ")
@@ -1913,7 +1907,7 @@ def quiz_game3():
         time.sleep(1.5)
         enters_bathroom()
     else:
-        playsound.playsound('wrong.wav', False)
+        playsound.playsound('sounds/wrong.wav', False)
         print("Incorrect!")
         time.sleep(1.5)
         print("Score: ", hole_score)
@@ -1943,7 +1937,7 @@ def quiz_game2():
     h_answer_two = input("The Film called Holes' main character is called...\n[A: Stanley Stanley]\n[B: Stanley Yelnats]\n[C: Stan Lee]\nAnswer: ")
     if h_answer_two == "B" or h_answer_two == "b" or h_answer_two == "Stanley Yalnats" or h_answer_two == "stanley yelnats":
         hole_score += 1
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Correct!")
         time.sleep(1.5)
         print("Score: ", hole_score)
@@ -1952,7 +1946,7 @@ def quiz_game2():
         quiz_game3()
     else:
         print("\n")
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("Incorrect!")
         time.sleep(1.5)
         print("Score: ", hole_score)
@@ -1982,7 +1976,7 @@ def quiz_game1():
     h_answer_one = input("In the meal Toad in the hole, what part of the meal is considered the hole\n[A: Yorkshire Pudding]\n[B: Sausage]\n[C: Gravy]\nAnswer: ")
     if h_answer_one == "a" or h_answer_one == "A" or h_answer_one == "Yorkshire Pudding" or h_answer_one == "yorkshire pudding":
         hole_score += 1
-        playsound.playsound('correct.wav', False)
+        sounds/, False)
         print("Correct!")
         time.sleep(1.5)
         print("Score: ", hole_score)
@@ -1990,7 +1984,7 @@ def quiz_game1():
         print("\n")
         quiz_game2()
     else:
-        playsound.playsound('wrong.wav', False)
+        sounds/, False)
         print("Incorrect!")
         time.sleep(1.5)
         print("Score: ", hole_score)
@@ -2020,12 +2014,12 @@ def right_hole():
     print("|    |_| \_\___/     |   ")
     print("|                    |    ")
     print(" --------------------  ")
-    print("\n\")
-    playsound.playsound('splat.wav', False)
+    print("\n")
+    sounds/, False)
     time.sleep(1.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
-    playsound.playsound('dead.wav', False)
+    sounds/, False)
     print("\n")
     print(" ------------------------------")
     print("|   !!     !           !!      |")
@@ -2051,7 +2045,7 @@ def left_hole():
         sys.stdout.flush()
     listo = input ("Ready? Y/N? ")
     if listo == "Y" or listo == "y" or listo == "yes" or listo == "YES":
-        playsound.playsound('gameshow.wav', False)
+        sounds/, False)
         time.sleep(1.5)
         print("\n\n")
         for char in "\n\n###############################\n##         HOLE QUIZ        ##\n###############################\n\n":
@@ -2087,11 +2081,11 @@ def feast_path():
     print(" ------------------------------")
     print("\n")
     end_game()
-    playsound.playsound('splat.wav', False)
+    sounds/, False)
     time.sleep(0.5)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
-    playsound.playsound('dead.wav', False)
+    sounds/, False)
     print(" ------------------------------")
     print("|   !!     !           !!      |")
     print("|           .  !   .           |")
@@ -2132,13 +2126,13 @@ def continue_path():
     print("|                                                                          |")
     print(" --------------------------------------------------------------------------")
     print("\n\n")
-    playsound.playsound('hiccups.wav', False)
+    sounds/, False)
     time.sleep(1.5)
     for char in "With the glycogen stores in your muscles depleted, you're safe behind a pair of crocs.\nSuddenly, a male human stumbles into the hall, he stinks of alcohol.\nHe has a bottle of Razvan's favourite Mezcal in his hand.\nIn a split second he collapses right on top of the precious hob nob crumbs!\nThankfully, you didn't stop for a snack.\n\nYou see two holes in the wall, one to the right and one to your left...\nWhich way do you want to go?\n[Left]/[Right]\nAnswer:":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     left_hole_right_hole = input ("Answer: ")
     print("\n\n\n")
     print(" --------------------------")
@@ -2159,7 +2153,7 @@ def continue_path():
     print("|                           |")
     print("|                           |")
     print(" --------------------------")
-    playsound.playsound('drink.wav', False)
+    playsound.playsound('sounds/drink.wav', False)
     print("\n\n\n")
     if left_hole_right_hole == "Left" or left_hole_right_hole == "left" or left_hole_right_hole == "l":
         print("\n")
@@ -2189,7 +2183,7 @@ def scurry_for_life():
 def beginning_options():
     print("\n------------------------------------------------------------------------------------")
     print("------------------------------------------------------------------------------------")
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     time.sleep(1.5)
     print("\n\n\n")
     print(" ------------------------------------")
@@ -2267,7 +2261,7 @@ def characters():
 # GAME STARTS
 def start_game():
     time.sleep(3)
-    playsound.playsound('squeaks.wav', False)
+    sounds/, False)
     welcome = "\n'Oh hello, oh wow! Maybe you can help me?! \nWhat is your name?'\nAnswer: "
     for char in welcome:
         sleep(0.15)
@@ -2303,10 +2297,10 @@ def start_game():
     if start == "Y" or start == "y" or start == "yes" or start == "Yes" or start == "YES":
         characters()
     elif start == "N" or start == "n" or start == "No" or start == "no" or start == "NO":
-        playsound.playsound('cat_shreak.wav', False)
-        playsound.playsound('squeaks.wav', False)
+        sounds/, False)
+        sounds/, False)
         print("\n")
-        playsound.playsound('boo.wav', False)
+        playsound.playsound('sounds/boo.wav', False)
         print(" ------------------------------")
         print("|   !!     !           !!      |")
         print("|           .  !   .           |")
@@ -2330,7 +2324,7 @@ def intro():
     custom_fig = Figlet(font='ogre')
     greeting = Figlet(font='small')
     print("")
-    playsound.playsound('pitterpatter.wav', False)
+    playsound.playsound('sounds/pitterpatter.wav', False)
     print ("------------------------------------------------------------------------------------")
     print("------------------------------------------------------------------------------------")
     time.sleep(1.5)
@@ -2393,7 +2387,7 @@ def intro():
         sleep(0.1)
         sys.stdout.write(char)
         sys.stdout.flush()
-    playsound.playsound('cat_shreak.wav', False)
+    playsound.playsound('sounds/cat_shreak.wav', False)
     time.sleep(1.5)
     print("------------------------------------------------------------------------------------")
     print("------------------------------------------------------------------------------------")
