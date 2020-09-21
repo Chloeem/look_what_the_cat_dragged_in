@@ -289,6 +289,11 @@ def moth_quiztime():
         time.sleep(1.5)
         if wins == rounds:
             tries = 0
+            time.sleep(1.5)
+            print("\n")
+            print("------------------------------------------------------------------------------------")
+            print("------------------------------------------------------------------------------------")
+            print("\n\n")
             after_moth_quiz()
         else:
             if tries > 0:
@@ -426,7 +431,7 @@ def after_spider_quiz():
                 end_game()
             else:
                 after_spider_quiz()
-    elif explore.lower() == "sounds/cat flap":
+    elif explore.lower() == "cat flap":
         playsound.playsound('sounds/cat_purr.wav', False)
         for char in "\nbut you have to jump down from the counter\nCat flap is locked, it uses the cats microchip to open\nThats the only way out :(\n":
             sleep(0.15)
@@ -553,6 +558,10 @@ def spider_quiztime():
         time.sleep(1.5)
         if wins == rounds:
             tries = 0
+            print("\n")
+            print("------------------------------------------------------------------------------------")
+            print("------------------------------------------------------------------------------------")
+            print("\n\n")
             after_spider_quiz()
         else:
             if tries > 0:
@@ -575,7 +584,7 @@ def spider_quiztime():
         time.sleep(1.5)
         playsound.playsound('sounds/attack.wav', False)
         time.sleep(1.5)
-        playsound.playsound('sounds/cat_shreat.wav', False)
+        playsound.playsound('sounds/cat_shreak.wav', False)
         time.sleep(1.5)
         playsound.playsound('sounds/dead.wav', False)
         end_game()
@@ -704,28 +713,95 @@ def go_option3():
 def daddy_lose():
     print("\n\n")
     playsound.playsound('sounds/squeaks.wav', False)
-    for char in "'Too bad.. I am kind of insulted that\nyou know so little about us Daddy Longlegs..\nbut im feeling generous so i'll give you\na long list of places to look..\n[A: Behind the paint tins]\n[B: Next to the bass guitar amp]\n[C: By the crabbing nets]\n[D: Derelict dollshouse]\n[E: Leaf Blower]\nAnswer: ":
+    for char in "'Too bad.. I am kind of insulted that\nyou know so little about us Daddy Longlegs..\nbut im feeling generous so i'll give you\na long list of places to look..\n[A: Behind the paint tins]\n[B: Next to the bass guitar]\n[C: By the crabbing nets]\n[D: Derelict dollshouse]\n[E: Leaf Blower]\nAnswer: ":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
     places_choice = input()
     if places_choice == "D" or places_choice == "d" or places_choice == "Derelict Dollshouse" or places_choice == "derelict dollshouse" or places_choice == "DERELICT DOLLSHOUSE":
-        print("\n")
+        print("\n\n")
+        print(" ------------------------------------------------------------")
+        print("|                                                            |")
+        print("|               ____     _____________                       |")
+        print("|               |==|____/_____________\___                   |")
+        print("|               |==/UUUU|.---.---.---.|UUU\                  |")
+        print("|               |=/UUUUU||___|___|<''||UUUU\                 |")
+        print("|               |/UU UUU||___|___|_>_||UU UU\                |")
+        print("|               /UUUUUUU'=============' U UUU\               |")
+        print("|              /UUUU  UUUUUUU  UUUUU UUUUU UUU\__            |")
+        print("|              |'''''''''''''''''|='''''''''''|")
+        print("|              |== ===  = =  ==   ==  == =  ==|-             |")
+        print("|              |= _______________ =  _______ =|=             |")
+        print("|              |=|:::|:::|:::|:::| =|.-----.|=|-             |")
+        print("|              |=|^^^|^^^|^^^|^^^|13|||_|_|||=|=             |")
+        print("|              |=|---+---+---+---| =|||_|_|||=|=             |")
+        print("|              |=|   |   | < |   |= ||     ||=|-             |")
+        print("|              |=|___|___|_<_|___| =|| == O||=|=             |")
+        print("|              |='''''o&,@ooo''''' '||     ||=|-             |")
+        print("|              |= =.o%&hjw8@&o.== ==||_____||=|-             |")
+        print("|              ''''|__________|'''''/_______\ ''             |")
+        print("|                                   ''''''''                 |")
+        print("|                                                            |")
+        print(" ------------------------------------------------------------")
+        print("\n\n")
         for char in "\nYou thank the Daddy Longlegs and begin on your way\ntowards the derelict dollshouse that looks just as scary\nas the big house you're in..\nYou peak through the window to see combwebs everywhere\nMiniture furniture covered in dust and mildew..\nContinuing round the back of the house\nyou approach with caution..\nyou hear a loud\nCRREEEEEAAAAAAKK!!\n...purrrrrrrrr!\n...\n...\nyou gulp and remind yourself this is your only chance out of here...":
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
         you_won()
     elif places_choice == "A" or places_choice == "a" or places_choice == "Behind the paint tins" or places_choice == "behind the paint tins" or places_choice == "Behind The Paint Tins" or places_choice == "BEHIND THE PAINT TINS" or places_choice == "paint tins" or places_choice == "Paint Tins" or places_choice == "PAINT TINS":
-        print("\n")
+        print("\n\n")
+        print(" ------------------------------------")
+        print("|                                    |")
+        print("|             ___                    |")     
+        print("|         ,--[___]--,                |") 
+        print("|        /           \               |") 
+        print("|       |,.--'```'--.,|    ,         |") 
+        print("|       |'-.,_____,.-'|    ||        |") 
+        print("|       |'-.,_____,.-'|    ||        |") 
+        print("|       |             |   _||_       |") 
+        print("|       |  P A I N T  |  ///\||      |") 
+        print("|       |             |  HHHHHH      |") 
+        print("|       |'-.,_____,.-'|  ||||||      |") 
+        print("|       `'-.,_____,.-''  ||||||      |") 
+        print("|                                    |")
+        print(" ------------------------------------")
+        print("\n\n")
         for char in "\nYou thank the Daddy Longlegs and begin on your way..\n'Oh please let there be a hole behind\nthose paint cans' you think...\nYou hear 'MEOWING' in the distance...\nThree paint cans gather together in a corner\nlooking omnious from your view.....\nYou get closer\n....\n\nOHHHH\n\bOOOPS!\n\nWrong choice.. You walk back to the Daddy Longlegs\n...\n'Hi Mousey, lets try again with that quiz...'\n" :
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_quiz1()
-    elif places_choice == "B" or places_choice == "B" or places_choice == "Next to the bass guitar amp" or places_choice == "next to the bass guitar amp" or places_choice == "NEXT TO THE BASS GUITAR AMP" or places_choice == "Guitar amp" or places_choice == "guitar amp" or places_choice == "Guitar Amp" or places_choice == "GUITAR AMP" or places_choice == "CRABBING NETS":
-        print("\n")
-        for char in "\nYou thank the Daddy Longlegs and begin on your way..\nIn the corner of the room you see the bass guitar amp\nthe cats water bowl is sat right next to it, full to the brim\n...It's a risky move\n...\nYou tiptoe round the back of the cans..\nOOOPS! Wrong choice.. The hole has been filled in!\n....\n\nYou walk back to the Daddy Longlegs\n....\n'Hi Mousey, lets try again with that quiz...'\n":
+    elif places_choice == "B" or places_choice == "B" or places_choice == "Next to the bass guitar" or places_choice == "next to the bass guitar" or places_choice == "NEXT TO THE BASS GUITAR" or places_choice == "Bass" or places_choice == "bass" or places_choice == "Bass" or places_choice == "BASS":
+        print("\n\n")
+        print(" -------------------------------")        
+        print("|                               |")
+        print("|                _              |")
+        print("|               /;)             |")
+        print("|              /;(              |")
+        print("|              >_/              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|              |-|              |")
+        print("|          _   |-|              |")
+        print("|         / \  |-|   _          |")
+        print("|        :   `'|-|  /,\         |")
+        print("|        :   ,`'-'`'/|:         |")
+        print("|         \  \ ...   ;/         |")
+        print("|          :  )...  ::          |")
+        print("|          ; / ...  ::          |")
+        print("|         / /  ___   \          |")
+        print("|        :  `-|||||.  \:        |")
+        print("|        :        (\`-';        |")
+        print("|         `._________,'         |")
+        print("|                               |")
+        print(" -------------------------------")
+        print("\n\n")
+        for char in "\nYou thank the Daddy Longlegs and begin on your way..\nIn the corner of the room you see the bass guitar\nthe cats water bowl is sat right next to it, full to the brim\n...It's a risky move\n...\nYou tiptoe round the back of the bass..\nOOOPS! Wrong choice.. The hole has been filled in!\n....\n\nYou walk back to the Daddy Longlegs\n....\n'Hi Mousey, lets try again with that quiz...'\n":
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
@@ -739,7 +815,17 @@ def daddy_lose():
             sys.stdout.flush()
         daddy_quiz1()
     elif places_choice == "E" or places_choice == "e" or places_choice == "Leaf blower" or places_choice == "leaf blower" or places_choice == "Leaf Blower" or places_choice == "LEAF BLOWER":
-        print("\n")
+        print("\n\n")
+        print(" -----------------")
+        print("|                 |")        
+        print("|       _/\_      |")
+        print("|     __\  /__    |")
+        print("|    <_      _>   |")
+        print("|      |/ )\|     |")
+        print("|        /        |")
+        print("|                 |")
+        print(" -----------------")
+        print("\n\n")
         leaf_blower2 = "\nYou spot the leaf blower up on the sideboard\nIt looks so far away from down on the ground..\nYou shimmy your way up the back...\nDigging your little claws in for your life..\n Once you get to the top you manage to spot a toad\nwho with a sinister grin on his face offers\nto sit on the button for you help...\nYou scramble to the opening of the leaf blower\n...\The open window in sight...\nThe toad says '1....\n....2\n....\n...3!!!\nHe sits on the button\nYou fly through the air....\n\nUGH OHHHHHHH\n\nYou miss\nand\n....\nSPLAAAAAATTTT!!!\n.....\n....."
         for char in leaf_blower2:
             sleep(0.15)
@@ -789,7 +875,32 @@ def daddy_lose():
 # DADDY HELP AFTER THE USER WINS THE QUIZ
 def daddy_help():
     daddy_clues = "'Ok well done you! I'll give you two clues to choose from..\nYou can potentially escape with the leaf blower\nor\nbehind the derelict dolls house..\n[A: Leaf blower]/[B: Derelict Dollshouse]\nAnswer: "
-    if daddy_clues == "B" or daddy_clues == "b" or daddy_clues == "derelict dollshouse" or daddy_clues == "Derelict dollshouse" or daddy_clues == "Derelict Dollshouse" or daddy_clues == "dollshouse" or daddy_clues == "Dollshouse" or daddy_clues == "DOLLSHOUSE":
+    if daddy_clues == "B" or daddy_clues == "b" or daddy_clues == "derelict dollshouse" or daddy_clues == "Derelict dollshouse" or daddy_clues == "Derelict Dollshouse" or daddy_clues == "dollshouse" or daddy_clues == "Dollshouse" or daddy_clues == "DOLLSHOUSE":  
+        print("\n\n")
+        print(" ------------------------------------------------------------")
+        print("|                                                            |")
+        print("|               ____     _____________                       |")
+        print("|               |==|____/_____________\___                   |")
+        print("|               |==/UUUU|.---.---.---.|UUU\                  |")
+        print("|               |=/UUUUU||___|___|<''||UUUU\                 |")
+        print("|               |/UU UUU||___|___|_>_||UU UU\                |")
+        print("|               /UUUUUUU'=============' U UUU\               |")
+        print("|              /UUUU  UUUUUUU  UUUUU UUUUU UUU\__            |")
+        print("|              |'''''''''''''''''|='''''''''''|")
+        print("|              |== ===  = =  ==   ==  == =  ==|-             |")
+        print("|              |= _______________ =  _______ =|=             |")
+        print("|              |=|:::|:::|:::|:::| =|.-----.|=|-             |")
+        print("|              |=|^^^|^^^|^^^|^^^|13|||_|_|||=|=             |")
+        print("|              |=|---+---+---+---| =|||_|_|||=|=             |")
+        print("|              |=|   |   | < |   |= ||     ||=|-             |")
+        print("|              |=|___|___|_<_|___| =|| == O||=|=             |")
+        print("|              |='''''o&,@ooo''''' '||     ||=|-             |")
+        print("|              |= =.o%&hjw8@&o.== ==||_____||=|-             |")
+        print("|              ''''|__________|'''''/_______\ ''             |")
+        print("|                                   ''''''''                 |")
+        print("|                                                            |")
+        print(" ------------------------------------------------------------")
+        print("\n\n")
         success = "\nYou thank the Daddy Longlegs and begin on your way\ntowards the derelict dollshouse that looks just as scary\nas the big house you're in..\nyou approach with caution..\nyou hear a loud\nCRREEEEEAAAAAAKK!!\n...purrrrrrrrr!\n...\nyou gulp and remind yourself this is your only chance out of here..."
         for char in success:
             sleep(0.15)
@@ -798,6 +909,17 @@ def daddy_help():
         playsound.playsound('sounds/squeaks.wav', False)
         you_won()
     elif daddy_clues == "A" or daddy_clues == "a" or daddy_clues == "Leaf blower" or daddy_clues == "leaf blower" or daddy_clues == "Leaf Blower" or daddy_clues == "LEAF BLOWER":
+        print("\n\n")
+        print(" -----------------")
+        print("|                 |")        
+        print("|       _/\_      |")
+        print("|     __\  /__    |")
+        print("|    <_      _>   |")
+        print("|      |/ )\|     |")
+        print("|        /        |")
+        print("|                 |")
+        print(" -----------------")
+        print("\n\n")
         leaf_blower = "\nYou spot the leaf blower up on the sideboard\nIt looks so far away from down on the ground..\nYou shimmy your way up the back...\nDigging your little claws in for your life..\n Once you get to the top you manage to spot a toad\nwho with a sinister grin on his face offers\nto sit on the button for you help...\nYou scramble to the opening of the leaf blower\n...\The open window in sight...\nThe toad says '1....\n....2\n....\n...3!!!\nHe sits on the button\nYou fly through the air....\n\nUGH OHHHHHHH\n\nYou miss\nand\n....\nSPLAAAAAATTTT!!!\n.....\n....."
         for char in leaf_blower:
             sleep(0.15)
@@ -874,6 +996,10 @@ def daddy_quiz3():
         time.sleep(4)
         print("You won! Ok i'll help you!")
         time.sleep(1.5)
+        time.sleep(1.5)
+        print("\n")
+        print("------------------------------------------------------------------------------------")
+        print("------------------------------------------------------------------------------------")
         print("\n\n")
         daddy_help()
     else:
