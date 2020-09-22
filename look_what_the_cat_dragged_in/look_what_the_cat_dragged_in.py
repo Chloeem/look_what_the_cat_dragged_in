@@ -118,7 +118,7 @@ def after_moth_quiz():
     leaf_offer = "@@@@"
     while leaf_offer.lower() != "yes" and leaf_offer.lower() != "no":
         leaf_offer = input("Answer: ")
-    for char in "\nThe Moth tells a story of how she comes to be there (through an open window)\nShe was starring longing at her reflection in the glass\nWondering who the other fine specimen of a Moth was\nShe flew into the house, only to realise she was alone..\nShe has been stuck here ever since.\nYou having a larger mousey brain look up and see the window\nits a little higher than you...\n....\n'How could she have been stuck so long with wings!?\nHMMMM...\nThe Moth offers to take you to the toaster for a tour.\nYou look even more confused..\nDo you accept her tour offer?\n[Yes]/[No]\n":
+    for char in "\nThe Moth tells a story of how she comes to be there (through an open window)\nShe was starring longing at her reflection in the glass\nWondering who the other fine specimen of a Moth was\nShe flew into the house, only to realise she was alone..\nShe has been stuck here ever since.\nYou having a larger mousey brain look up and see the window\nits a little higher than you...\n....\n'How could she have been stuck so long with wings!?\nHMMMM...'\nThe Moth offers to take you to the toaster for a tour.\nYou look even more confused..\nDo you accept her tour offer?\n[Yes]/[No]\n":
         sleep(0.15)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -146,7 +146,7 @@ def after_moth_quiz():
         print("|                                                          |    ")
         print(" ----------------------------------------------------------     ")                                     
         print("\n\n")
-        for char in "\nYou look at her perplexed and start to wonder if she can help\nyou after all...\nIt seems loneliness has got to her..\nShe starts explaining to you how the toaster works.\nYou leap to the ready, down into the toaster...\n\n'1!!!' She shouts..\n....2!!..\n...3!!!..\n\nThe moth pushes the lever flying you up UP UPPPPP\nand AWWWWAAAAAYY..\nOut the window...\n....\n":
+        for char in "\nYou look at her perplexed and start to wonder if she can help\nyou after all...\nIt seems loneliness has got to her..\nShe starts explaining to you how the toaster works to help your escape.\nYou leap to the ready, down into the toaster...\n\n'1!!!' She shouts..\n....2!!..\n...3!!!..\n\nThe moth pushes the lever flying you up UP UPPPPP\nand AWWWWAAAAAYY..\nOut the window...\n....\n":
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
@@ -293,7 +293,7 @@ def moth_quiztime():
             print("\n")
             print("------------------------------------------------------------------------------------")
             print("------------------------------------------------------------------------------------")
-            print("\n\n")
+            print("\n")
             after_moth_quiz()
         else:
             if tries > 0:
@@ -349,7 +349,7 @@ def after_spider_quiz():
         while option.lower() != "yes" and option.lower() != "no":
             option = input("Answer: ")
         if option.lower() == "yes":
-            for char in "\nYou wander over the bag of flour where the moth\nis buried deep and chattering to herself\nshe heres your little mousey footsteps\nand pops out the bag\n\n....\n'OH HELLO! A MOUSE WOW!\nI'm Silve the moth...Nice to meet you!\n\nYou tell her your story and she offers to help under one\ncircumstances...":
+            for char in "\nYou wander over the bag of flour where the moth\nis buried deep and chattering to herself\nshe heres your little mousey footsteps\nand pops out the bag\n\n....\n'OH HELLO! A MOUSE WOW!\nI'm Silve the moth...Nice to meet you!\n\nYou tell her your story and she offers to help under one\ncondition...":
                 sleep(0.15)
                 sys.stdout.write(char)
                 sys.stdout.flush()
@@ -561,7 +561,7 @@ def spider_quiztime():
             print("\n")
             print("------------------------------------------------------------------------------------")
             print("------------------------------------------------------------------------------------")
-            print("\n\n")
+            print("\n")
             after_spider_quiz()
         else:
             if tries > 0:
@@ -632,6 +632,7 @@ def help_spider():
             sleep(0.15)
             sys.stdout.write(char)
             sys.stdout.flush()
+        playsound.playsound('sounds/cat_meow.wav', False)
         playsound.playsound('sounds/squeaks.wav', False)
         time.sleep(1.5)
         playsound.playsound('sounds/dead.wav', False)
@@ -814,6 +815,7 @@ def daddy_lose():
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_quiz1()
+        playsound.playsound('sounds/cat_meow.wav', False)
     elif places_choice == "E" or places_choice == "e" or places_choice == "Leaf blower" or places_choice == "leaf blower" or places_choice == "Leaf Blower" or places_choice == "LEAF BLOWER":
         print("\n\n")
         print(" -----------------")
@@ -874,7 +876,7 @@ def daddy_lose():
         daddy_lose()   
 # DADDY HELP AFTER THE USER WINS THE QUIZ
 def daddy_help():
-    daddy_clues = "'Ok well done you! I'll give you two clues to choose from..\nYou can potentially escape with the leaf blower\nor\nbehind the derelict dolls house..\n[A: Leaf blower]/[B: Derelict Dollshouse]\nAnswer: "
+    daddy_clues = input("'\nOk well done you! I'll give you two clues to choose from..\nYou can potentially escape with the leaf blower\nor\nbehind the derelict dolls house..\n[A: Leaf blower]/[B: Derelict Dollshouse]\nAnswer: ")
     if daddy_clues == "B" or daddy_clues == "b" or daddy_clues == "derelict dollshouse" or daddy_clues == "Derelict dollshouse" or daddy_clues == "Derelict Dollshouse" or daddy_clues == "dollshouse" or daddy_clues == "Dollshouse" or daddy_clues == "DOLLSHOUSE":  
         print("\n\n")
         print(" ------------------------------------------------------------")
@@ -1165,7 +1167,7 @@ def gerbil_choice():
         sys.stdout.write(char)
         sys.stdout.flush()
     gerbil_a_b = input()
-    if gerbil_a_b == "A" or gerbil_a_b == "a" or gerbil_a_b == "B" or gerbil_a_b == "b" and trust_gerbil == "Y":
+    if gerbil_a_b == "A" or gerbil_a_b == "a" or gerbil_a_b == "Hot wheels" or gerbil_a_b == "hot Wheels" and gerbil_a_b == "HOT WHEELS":
         for char in "\nYou chose to follow the Gerbil's advice\nYou brace yourself inside the Hot Wheels car\nAs that devious little Gerbil presses the GO button\n\nOHHH NOOOO\n\nHe knew what he was doing\n...\nTheres no way youre going to make it...\nAHHHH...":
             sleep(0.2)
             sys.stdout.write(char)
@@ -1204,7 +1206,7 @@ def gerbil_choice():
         print(" ------------------------------")
         print("\n")
         end_game()
-    elif gerbil_a_b == "A" or gerbil_a_b == "a" or gerbil_a_b == "B" or gerbil_a_b == "b" and trust_gerbil == "N":
+    elif gerbil_a_b == "B" or gerbil_a_b == "b" or gerbil_a_b == "Daddy longlegs" or gerbil_a_b == "daddy longlegs" and gerbil_a_b == "DADDY LONGLEGS":
         print("Very wise indeed... That pesky Gerbil wasnt to be trusted!!\nYou now make your way to the entrance\n")
         daddy_longlegs()
     else:
@@ -1534,7 +1536,7 @@ def dog_escape():
         print("|         ) _     _    /                                |")
         print("|        ( (^)-~-(^)                                    | ")
         print("|    __,-.\_( 6 6 )__,-.___   - Pffft what sort         |")
-        print("|      'M'   \   /   'M'        of name is ".format(name))
+        print("|      'M'   \   /   'M'        of name is that!        |")
         print("|             >o<                                       |")                       
         print("|                                                       |")
         print(" -------------------------------------------------------")
@@ -1720,7 +1722,7 @@ def dog_quiz_2():
 
 def dog_quiz_1():
     playsound.playsound('sounds/gameshow.wav', False)
-    for char in "\n\n###############################\n##         DOG QUIZ        ##\n###############################\n\nWelcome to the wonderful world of canine conundrums.\nThink very well and answer wisely.\nThese questions really are a matter of life or death.\nAny wrong answer and you will be a fine dinner.\n\n":
+    for char in "\n\n###############################\n##         DOG QUIZ         ##\n###############################\n\nWelcome to the wonderful world of canine conundrums.\nThink very well and answer wisely.\nThese questions really are a matter of life or death.\nAny wrong answer and you will be a fine dinner.\n\n":
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -1820,10 +1822,10 @@ def response_ko_a():
         print("|              __.'    |   /  (o|o)  \     `'.   ':/                       | ")
         print("|             /    .:. /   |   ___   |        '---'                        | ")
         print("|            |    ::::'   /:  (._.) .:\                                    |")
-        print("|            \    .='    |:'        :::|  - Ohh heyyy Squeaks and ".format(name))
-        print("|             `""`       \     .-.   ':/                                   | ")
-        print("|                        '---`|I|`---'                                     | ")
-        print("|                             '-'                                          | ")
+        print("|            \    .='    |:'        :::|  - Ohh heyyy Squeaks              |")
+        print("|             `""`       \     .-.   ':/        and friend!                | ")
+        print("|                         '---`|I|`---'                                    | ")
+        print("|                              '-'                                         | ")
         print("|                                                                          |")
         print(" --------------------------------------------------------------------------")
         print("\n")
@@ -1844,7 +1846,7 @@ def response_ko_a():
 # USER IS BEHIND THE TV - THEY NEED TO GET AWAY FROM THE CAT
 def option_two():
     playsound.playsound('sounds/cat_purr.wav', False)
-    for char in "\nYou pop your little head around the side of the Tv\nYou see the lazy plump kitty cat fast asleep snoozing in the sun again.\nThere is no straight escape out the room,\nthe fat cat is lay in front of the doorway\n....\nHMMMMMM...\n....\n'OHHHH..what's that?', you think, as you spot a Tech Deck on the floor..\nMaybe an escape?\nYou know that you are a lot more agile and faster than the cat.\nBut you need to decide if luck is on your side tonight?\n\n":
+    for char in "\nYou pop your little head around the side of the TV\nYou see the lazy plump kitty cat fast asleep snoozing in the sun again.\nThere is no straight escape out the room,\nthe fat cat is lay in front of the doorway\n....\nHMMMMMM...\n....\n'OHHHH..what's that?', you think, as you spot a Tech Deck on the floor..\nMaybe an escape?\nYou know that you are a lot more agile and faster than the cat.\nBut you need to decide if luck is on your side tonight?\n\n":
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -1852,6 +1854,8 @@ def option_two():
     if response_a == "A" or response_a == "a" or response_a == "smack the cat over its head to KO the cat":
         print("\n")
         playsound.playsound('sounds/attack.wav', False)
+        time.sleep(1.5)
+        playsound.playsound('sounds/cat_shreak.wav', False)
         for char in "\nOHHHHH silly mouse!!\nYou may be the prize fighter back in your small mousey world...\nBut your puny rodent arms are not strong enough to KO a Maine Coone!!\nYou start panicking...What do you do NOW?!\n":
             sleep(0.2)
             sys.stdout.write(char)
@@ -1924,10 +1928,10 @@ def get_passed_unseen():
         print("|              __.'    |   /  (o|o)  \     `'.   ':/                       | ")
         print("|             /    .:. /   |   ___   |        '---'                        | ")
         print("|            |    ::::'   /:  (._.) .:\                                    |")
-        print("|            \    .='    |:'        :::|  - Ohh heyyy Squeaks and ".format(name))
-        print("|             `""`       \     .-.   ':/                                   | ")
-        print("|                        '---`|I|`---'                                     | ")
-        print("|                             '-'                                          | ")
+        print("|            \    .='    |:'        :::|  - Ohh heyyy Squeaks              |")
+        print("|             `""`       \     .-.   ':/        and friend!                | ")
+        print("|                         '---`|I|`---'                                    | ")
+        print("|                              '-'                                         | ")
         print("|                                                                          |")
         print(" --------------------------------------------------------------------------")
         print("\n")
@@ -2317,7 +2321,7 @@ def beginning_options():
     print("------------------------------------------------------------------------------------")
     playsound.playsound('sounds/squeaks.wav', False)
     time.sleep(1.5)
-    print("\n\n\n")
+    print("\n\n")
     print(" ------------------------------------")
     print("|                                     |")
     print("|                                     |")
@@ -2402,7 +2406,7 @@ def start_game():
     global name
     name = input()
     time.sleep(0.15)
-    squeaks_intro = "'Nice to meet you {}.\nIm Squeaks, the mouse.\nThe greatest fighter in all of mousedom'\nCheese aficionado, lover of coffee, the outdoors\nand making new friends.\nHates: Cats, tea and rain.\n' ".format(name)
+    squeaks_intro = "'Nice to meet you {}.\nIm Squeaks, the mouse.\nThe greatest fighter in all of mousedom'\n'Cheese aficionado, lover of coffee, the outdoors\nand making new friends.\n'Hates: Cats, tea and rain.'\n ".format(name)
     for char in squeaks_intro:
         sleep(0.15)
         sys.stdout.write(char)
@@ -2410,6 +2414,7 @@ def start_game():
     time.sleep(1)
     print("\n")
     print("\n")
+    playsound.playsound('sounds/hi.wav', False)
     print(" --------------------------------------")
     print("|                                       |")
     print("|              /\                       |")
