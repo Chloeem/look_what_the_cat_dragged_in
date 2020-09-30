@@ -7,6 +7,7 @@ import playsound
 import random
 
 
+TYPEWRITER_TIMINGS = 0.025
 
 # GAME ENDING CREDITS
 def end_game():
@@ -68,7 +69,7 @@ def you_won():
     print("------------------------------------------------------------------------------------")
     congrats = "                      CONGRATULATIONS {} YOU WON!!\n".format(name)
     for char in congrats:
-        sleep(0.1)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
@@ -109,7 +110,7 @@ def after_moth_quiz():
     print("\n")
     playsound.playsound('sounds/moth_laugh.wav', False)
     for char in "\nThe Moth disappears for moment, giggling to herself maniacally\n'HEHEHEhehohohohehe...'\nAnd returns with a lettuce leaf\nShe gestures to give it to you\nYou look at her confused...\nDo you accept the random leaf offer?\n[Yes]/[No]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     # print("Moth gives you a lettuce leaf")
@@ -119,7 +120,7 @@ def after_moth_quiz():
     while leaf_offer.lower() != "yes" and leaf_offer.lower() != "no":
         leaf_offer = input("Answer: ")
     for char in "\nThe Moth tells a story of how she comes to be there (through an open window)\nShe was starring longing at her reflection in the glass\nWondering who the other fine specimen of a Moth was\nShe flew into the house, only to realise she was alone..\nShe has been stuck here ever since.\nYou having a larger mousey brain look up and see the window\nits a little higher than you...\n....\n'How could she have been stuck so long with wings!?\nHMMMM...'\nThe Moth offers to take you to the toaster for a tour.\nYou look even more confused..\nDo you accept her tour offer?\n[Yes]/[No]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     tour_offer = "@@@@"
@@ -128,7 +129,7 @@ def after_moth_quiz():
         playsound.playsound('sounds/moth_laugh.wav', False)
     if tour_offer.lower() == "yes":
         for char in "\nThe Moth starts giggling againn..\n'HEHEHEhehohohohehe...'\nShe turns to the toaster with the biggest grin on her mothy face\nand tells you this is her hilarious best friend\nPointing to the toaster\n...\nShe says it tells great jokes in the morning..":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         print("\n")
@@ -147,19 +148,19 @@ def after_moth_quiz():
         print(" ----------------------------------------------------------     ")                                     
         print("\n\n")
         for char in "\nYou look at her perplexed and start to wonder if she can help\nyou after all...\nIt seems loneliness has got to her..\nShe starts explaining to you how the toaster works to help your escape.\nYou leap to the ready, down into the toaster...\n\n'1!!!' She shouts..\n....2!!..\n...3!!!..\n\nThe moth pushes the lever flying you up UP UPPPPP\nand AWWWWAAAAAYY..\nOut the window...\n....\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         time.sleep(1.5)
         if leaf_offer.lower() == "yes":
             for char in "\nThe Moth shout to you\n\nLETTUCE LEAFFFFF'\n\nYou grab the leaf and paraglide out the window....":
-                sleep(0.15)
+                sleep(TYPEWRITER_TIMINGS)
                 sys.stdout.write(char)
                 sys.stdout.flush()
             you_won()
         else:
             for char in "\nThe Moth waves the lettuce leaf and shouts 'GLIDERRRR' at to you\n\nYOU PANIC\nNOOOOO!!\nYou should have taken the leaf to glide on\n....\nNOOOOO\nAHHHH...\n....You SPLAT on the window\n":
-                sleep(0.15)
+                sleep(TYPEWRITER_TIMINGS)
                 sys.stdout.write(char)
             print("\n")
             print(" ------------------------------")
@@ -185,7 +186,7 @@ def after_moth_quiz():
             end_game()
     else:
         for char in "\nYou go back to kitchen to explore some more...\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         time.sleep(1.5)
@@ -316,7 +317,7 @@ def after_spider_quiz():
     print("\n")
     playsound.playsound('sounds/squeaks.wav', False)
     for char in "\nAfter hard swallowing your shared Wasp dinner and\nmanaging to keep it down in your stomach,\nyou crack a smile on your fuzzy face as the Spider\ntakes you into the kitchen counter to look around.\nWhat do you want to explore?\n[Espresso Machine]\n[Sink]\n[Cat flap]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     explore = "####"
@@ -342,7 +343,7 @@ def after_spider_quiz():
         playsound.playsound('sounds/drink.wav', True)
         playsound.playsound('sounds/energized.wav', False)
         for char in "\nWo0o0OOOo0ooooOo0o0oo00ooooooo...\nYou try the coffee, feeling SUPER energised and invinsible\nYou eyes dart around frantically looking for clues...\n....\nYou notice a moth in a bag of flour\nDo you want to Speak to moth?\n[Yes]/[No]\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         option = "@@@@"
@@ -350,7 +351,7 @@ def after_spider_quiz():
             option = input("Answer: ")
         if option.lower() == "yes":
             for char in "\nYou wander over the bag of flour where the moth\nis buried deep and chattering to herself\nshe heres your little mousey footsteps\nand pops out the bag\n\n....\n'OH HELLO! A MOUSE WOW!\nI'm Silve the moth...Nice to meet you!\n\nYou tell her your story and she offers to help under one\ncondition...":
-                sleep(0.15)
+                sleep(TYPEWRITER_TIMINGS)
                 sys.stdout.write(char)
                 sys.stdout.flush()
             time.sleep(2)
@@ -386,19 +387,19 @@ def after_spider_quiz():
             print("\n\n")
             time.sleep(1.5)
             for char in "\n\n###############################\n##         MOTH QUIZ         ##\n###############################\n\nTry to answer 3 moth related questions.\n\n":
-                sleep(0.15)
+                sleep(TYPEWRITER_TIMINGS)
                 sys.stdout.write(char)
                 sys.stdout.flush()
             moth_quiztime()
         else:
             for char in "\nAwww you scardey mouse...\nYou just lost a potential new friend..\n":
-                sleep(0.15)
+                sleep(TYPEWRITER_TIMINGS)
                 sys.stdout.write(char)
                 sys.stdout.flush()
             after_spider_quiz()
     elif explore.lower() == "sink":
         for char in "\nYou scurry over to the sink as you're hit by\nthe STENCHHHH of rotten pumpkin spice latte...\n....\nThe sink is full of old plates\nand mold is thriving in the mugs\nThat Wasp meal starts to stir in your tummy..\nLeave?\n[Yes]/[No]\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         option = "@@@@"
@@ -407,7 +408,7 @@ def after_spider_quiz():
             if option.lower() == "no":
                 playsound.playsound('sounds/slimy.wav', False)
                 for char in "\nGrime is life! You choose to stay n chill\nThinking to yourself 'I love this place!'\n....\nWRONG MOUSEY....You fall sick and say hello to that Wasp again...\n\n":
-                    sleep(0.15)
+                    sleep(TYPEWRITER_TIMINGS)
                     sys.stdout.write(char)
                     sys.stdout.flush()
                 playsound.playsound('sounds/squeaks.wav', False)
@@ -434,7 +435,7 @@ def after_spider_quiz():
     elif explore.lower() == "cat flap":
         playsound.playsound('sounds/cat_purr.wav', False)
         for char in "\nbut you have to jump down from the counter\nCat flap is locked, it uses the cats microchip to open\nThats the only way out :(\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         #back to the kitchen counter...
@@ -610,7 +611,7 @@ def help_spider():
     print("\n\n")
     playsound.playsound('sounds/attack.wav', False)
     for char in "\nThe three of you start brawling dust is flying\nYou make a sudden jump in the wasps direction\npinning him to the window, he cant get away...\nThe Spider karate chops the Wasp with her 8 legs\n\n!!SUPER POWER KICK!!\n\nThe wasp is DEAD!!!\nThe Spider offers you some of the Wasp\nto feast on as thank you.....\nHis fresh delicacy that you assisted in preparing...\nDo you accept this offer?\n[Yes]/[No]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     eat_offer = "@@@@"
@@ -618,18 +619,18 @@ def help_spider():
         eat_offer = input("Answer: ")
     if eat_offer.lower() == "yes":
         for char in "\n'GROSS' you think.. you mull it over thinking 'Fine..\nI want to be polite and I need the help..\nBut i'm really not pleased about it..'\nHolding your little mousey nose you swallow the wasp chunk whole\nThe Spider smiles and says 'ITS QUIZ TIME!!'":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         playsound.playsound('sounds/gameshow.wav', False)
         for char in "\n\n###############################\n##        SPIDER QUIZ        ##\n###############################\n\nTry to answer 3 spider related questions\n\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         spider_quiztime()
     else:
         for char in "\n'GROSS NOPE'\n'NOT HAPPENING'\nYou say outloud!!\nYou quick reaction has offended the Spider!!\n....\nThe Spider dashes towards you spinning you up in a web\n....\n......you scream HELP......\nThe cat MEOWS in the distance...\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         playsound.playsound('sounds/cat_meow.wav', False)
@@ -699,7 +700,7 @@ def help_wasp():
     end_game()
 def go_option3():  
     for char in "\n\nYou run to the bottom of the velvet curtains who look like\ntheyve seen better days....\nBillows of dust come flying off as you scale\nthe curtain to the top trying not to\nchoke as you get a better vantage point....\nYou see a web on the window sill,\nwhere a Spider is being attacked by a\nmean looking Wasp.\n\nWho do you want to help?\n[Spider]/[Wasp]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     who_to_help = "@@@@"
@@ -715,7 +716,7 @@ def daddy_lose():
     print("\n\n")
     playsound.playsound('sounds/squeaks.wav', False)
     for char in "'Too bad.. I am kind of insulted that\nyou know so little about us Daddy Longlegs..\nbut im feeling generous so i'll give you\na long list of places to look..\n[A: Behind the paint tins]\n[B: Next to the bass guitar]\n[C: By the crabbing nets]\n[D: Derelict dollshouse]\n[E: Leaf Blower]\nAnswer: ":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     places_choice = input()
@@ -746,7 +747,7 @@ def daddy_lose():
         print(" ------------------------------------------------------------")
         print("\n\n")
         for char in "\nYou thank the Daddy Longlegs and begin on your way\ntowards the derelict dollshouse that looks just as scary\nas the big house you're in..\nYou peak through the window to see combwebs everywhere\nMiniture furniture covered in dust and mildew..\nContinuing round the back of the house\nyou approach with caution..\nyou hear a loud\nCRREEEEEAAAAAAKK!!\n...purrrrrrrrr!\n...\n...\nyou gulp and remind yourself this is your only chance out of here...":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         you_won()
@@ -769,7 +770,7 @@ def daddy_lose():
         print(" ------------------------------------")
         print("\n\n")
         for char in "\nYou thank the Daddy Longlegs and begin on your way..\n'Oh please let there be a hole behind\nthose paint cans' you think...\nYou hear 'MEOWING' in the distance...\nThree paint cans gather together in a corner\nlooking omnious from your view.....\nYou get closer\n....\n\nOHHHH\n\bOOOPS!\n\nWrong choice.. You walk back to the Daddy Longlegs\n...\n'Hi Mousey, lets try again with that quiz...'\n" :
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_quiz1()
@@ -803,7 +804,7 @@ def daddy_lose():
         print(" -------------------------------")
         print("\n\n")
         for char in "\nYou thank the Daddy Longlegs and begin on your way..\nIn the corner of the room you see the bass guitar\nthe cats water bowl is sat right next to it, full to the brim\n...It's a risky move\n...\nYou tiptoe round the back of the bass..\nOOOPS! Wrong choice.. The hole has been filled in!\n....\n\nYou walk back to the Daddy Longlegs\n....\n'Hi Mousey, lets try again with that quiz...'\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_quiz1()
@@ -811,7 +812,7 @@ def daddy_lose():
         print("\n")
         playsound.playsound('sounds/cat_purr.wav', False)
         for char in "\nYou thank the Daddy Longlegs and begin on your way..\nIn the conservatory you see some large crabbing nets\ndraped over some old cardboard boxes..\nWhat's that you can hear...\npurrrrrrr!!\nPURRRRRR..!!\nIt seems to be getting closer...\n\nRUN RUN! BEFORE THE CAT GETS YOU!\n\n....You run with all your might towards those crabbing nets and boxes\n....\nClimbing up the net as fast as you can\nto see if the window is open...\n....\nThe cat 'MEEOOWWWWS' below you..\nOH NO THE WINDOW IS TOO HIGH\n....\nSuddenly there is a loud BANGING and calls of 'Oh kitty cat, diner time!'\nThe cat runs out the room\nYou dash back down the crabbing nets to the floor and back\nout the room!\nPHEW! That was so close!\n\nYou walk back to the Daddy Longlegs\n...\n'Hi Mousey, lets try again with that quiz...'\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_quiz1()
@@ -830,7 +831,7 @@ def daddy_lose():
         print("\n\n")
         leaf_blower2 = "\nYou spot the leaf blower up on the sideboard\nIt looks so far away from down on the ground..\nYou shimmy your way up the back...\nDigging your little claws in for your life..\n Once you get to the top you manage to spot a toad\nwho with a sinister grin on his face offers\nto sit on the button for you help...\nYou scramble to the opening of the leaf blower\n...\The open window in sight...\nThe toad says '1....\n....2\n....\n...3!!!\nHe sits on the button\nYou fly through the air....\n\nUGH OHHHHHHH\n\nYou miss\nand\n....\nSPLAAAAAATTTT!!!\n.....\n....."
         for char in leaf_blower2:
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         print("\n")
@@ -905,7 +906,7 @@ def daddy_help():
         print("\n\n")
         success = "\nYou thank the Daddy Longlegs and begin on your way\ntowards the derelict dollshouse that looks just as scary\nas the big house you're in..\nyou approach with caution..\nyou hear a loud\nCRREEEEEAAAAAAKK!!\n...purrrrrrrrr!\n...\nyou gulp and remind yourself this is your only chance out of here..."
         for char in success:
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         playsound.playsound('sounds/squeaks.wav', False)
@@ -924,7 +925,7 @@ def daddy_help():
         print("\n\n")
         leaf_blower = "\nYou spot the leaf blower up on the sideboard\nIt looks so far away from down on the ground..\nYou shimmy your way up the back...\nDigging your little claws in for your life..\n Once you get to the top you manage to spot a toad\nwho with a sinister grin on his face offers\nto sit on the button for you help...\nYou scramble to the opening of the leaf blower\n...\The open window in sight...\nThe toad says '1....\n....2\n....\n...3!!!\nHe sits on the button\nYou fly through the air....\n\nUGH OHHHHHHH\n\nYou miss\nand\n....\nSPLAAAAAATTTT!!!\n.....\n....."
         for char in leaf_blower:
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         print("\n")
@@ -968,7 +969,7 @@ def daddy_help():
         print("\n\n")
         wrong_entry = "'Sorry that isnt one of the clues I gave you, silly mouse. Try again!'"
         for char in wrong_entry:
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         daddy_help()
@@ -1116,7 +1117,7 @@ def daddy_quiz1():
 def daddy_longlegs():
     daddy_approach = "You approach the entrance and theres is no\nDaddy Longlegs in sight. You keep walking down\na steep dark pathway when suddenly\n....\n\nBANG!!!!\n\nYou have ran into the Daddy Longlegs after all.."
     for char in daddy_approach:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(2)
@@ -1145,7 +1146,7 @@ def daddy_longlegs():
     time.sleep(1.5)
     daddy_hello = "'Oh hello you fuzzy little thing\nOh you want my help!\nFirst things first, us Daddy Longlegs are\nvery proud bugs especially of our long\nlooooonggggggg legs.\nSo you must answer some questions!\nGet them right and i'll help you get out of here!' "
     for char in daddy_hello:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
@@ -1908,13 +1909,13 @@ def option_two():
 #OPTION ONE - LINK CODE TO OPTION 2!!
 def get_passed_unseen():
     for char in "You slowly.. stealthily... creep past the lady's horrendous bunions.\nThe Stench...... unreal..\nYour tail accidently brushes up on them... EUGHHH!\nShe screams, so now you have to run!\nYou scramble across the dimly lit landing and head into a child's bedroom.\nIt's dark, except from the light of some UV glowing stars on the ceiling.\nYou can distinguish a glass enclosure ontop of a desk.\n\nYou can see a gerbil munching on some celery and a tech deck\nnext to the cage ":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     get_passed = input("Press 'T' key to talk to the Gerbil\nAnswer: ")
     if get_passed == "T" or get_passed == "t":
         for char in "\nBefore you can speak to the Gerbil a dog called\nLenny introduces himself and says you must sit with him to\nwatch Shrek 1 with him and his owner Andy...\nYou hastily agree..\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         playsound.playsound('sounds/happy_dog.wav', False)
@@ -1945,7 +1946,7 @@ def reveal_yourself():
     playsound.playsound('sounds/woman_scream.wav', False)
     time.sleep(1.5)
     for char in "You switch on the rodent version of puppy dog eyes and squeak up at the lady.\nSurely she cant resist your charm {}.\nOH NO!!!\nShe HATES mice..\nShe's battered you with her hairbrush.\nR.I.P\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     playsound.playsound('sounds/splat.wav', False)
@@ -1978,7 +1979,7 @@ def enters_bathroom():
     print("\n")
     playsound.playsound('sounds/squeaks.wav', False)
     for char in "You take your cheese winnings, and carry on through the hole.\nYou end up in the upstairs bathroom, just in a crevice in the wall by the bath tub.\nThere is a woman removing her makeup in the mirror.\nShe smells of the mezcal, and is swaying slightly.\nBut she looks kind, you wonder that if you squeaked up that she'd help you. ":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     print("\n\n")
@@ -2137,7 +2138,7 @@ def quiz_game1():
 def right_hole():
     print("\n")
     for char in "Your little eyes mistook a grease stain for a hole!\nYou headbutted the wall and KO'd yourself.\nYou lose. ":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     print("\n\n")
@@ -2176,7 +2177,7 @@ def right_hole():
 def left_hole():
     print("\n")
     for char in "Welcome to who wants to be a left hole quiz winner?\nIf you answer correctly, you may carry on up the path\nIf you do not, you await a grave fate. \n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     listo = input ("Ready? Y/N? ")
@@ -2185,7 +2186,7 @@ def left_hole():
         time.sleep(1.5)
         print("\n\n")
         for char in "\n\n###############################\n##         HOLE QUIZ        ##\n###############################\n\n":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
         time.sleep(2)
@@ -2197,7 +2198,7 @@ def left_hole():
 def feast_path():
     print("\n")
     for char in"'Nothing beats the sugary goodness of a Hob Nob!'You say to yourself\nOH NO!!\nA GIANT DRUNK MALE HUMAN HAS FALLEN ON TOP OF YOU.\n\nYour stop for a snack has cost you your life.\n...":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
@@ -2265,7 +2266,7 @@ def continue_path():
     playsound.playsound('sounds/hiccups.wav', False)
     time.sleep(1.5)
     for char in "With the glycogen stores in your muscles depleted, you're safe behind a pair of crocs.\nSuddenly, a male human stumbles into the hall, he stinks of alcohol.\nHe has a bottle of Razvan's favourite Mezcal in his hand.\nIn a split second he collapses right on top of the precious hob nob crumbs!\nThankfully, you didn't stop for a snack.\n\nYou see two holes in the wall, one to the right and one to your left...\nWhich way do you want to go?\n[Left]/[Right]\nAnswer:":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     playsound.playsound('sounds/squeaks.wav', False)
@@ -2299,14 +2300,14 @@ def continue_path():
         right_hole()
     else:
         for char in "It's left or right, there is no up or down\nOr backwards to run to Pret for a coffee Mousey\nTry again! ":
-            sleep(0.15)
+            sleep(TYPEWRITER_TIMINGS)
             sys.stdout.write(char)
             sys.stdout.flush()
     continue_path()
 def scurry_for_life():
     print("\n")
     for char in "Well done! You made it out of the room unscathed.\nBut you just ran like you've never ran before.\nYour mousey legs are knackered and you're SO hungry.\nYou notice some delicious hob nob crumbs on the floor.\nWill you continue running across the hall just in case?\nOr will you stay and feast?\n[Continue]\n[Feast]\n":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     continue_or_feast = input("Answer: ")
@@ -2338,13 +2339,13 @@ def beginning_options():
     print("\n\n")
     time.sleep(1.5)
     for char in "'It looks like we are trapped behind what I think is a TV..\nWhatever are we going to do!!?\nWe've got to find some way out!!'":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
     print("\n")
     for char in "\n'Im so glad you're helping me, but what should we do?'\n[1: Scurry for your life away from the cat, but who knows if you'll make]\n[2: Collect the Tech Deck and silently creep up to the sleeping cat]\n[3: Climb the curtains for a better vantage point]\nAnswer: ":
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     route_option = input()
@@ -2375,7 +2376,7 @@ def beginning_options():
 def characters():
     character_options = ("\n'Oh thank you so much {}, I can tell we're going to be good friends!\nI've gotta say though.. You are kinda funny looking\nI cant quite tell, what sort of animal you are?'\n[Unicorn]\n[Monkey]\n[Frog]\n[Octopus]\n[Scorpion]\n".format(name))
     for char in character_options:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     character_select = input("Answer: ")
@@ -2400,15 +2401,15 @@ def start_game():
     playsound.playsound('sounds/squeaks.wav', False)
     welcome = "\n'Oh hello, oh wow! Maybe you can help me?! \nWhat is your name?'\nAnswer: "
     for char in welcome:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     global name
     name = input()
-    time.sleep(0.15)
+    time.sleep(TYPEWRITER_TIMINGS)
     squeaks_intro = "'Nice to meet you {}.\nIm Squeaks, the mouse.\nThe greatest fighter in all of mousedom'\n'Cheese aficionado, lover of coffee, the outdoors\nand making new friends.\n'Hates: Cats, tea and rain.'\n ".format(name)
     for char in squeaks_intro:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1)
@@ -2426,7 +2427,7 @@ def start_game():
     print("\n")
     sticky_situation = "\n'Im in a sticky situation!! \nThis mean old cat has dragged me by the tail inside this big scary house!! \nIm so far away from my home under the biggest tree!!\nI dont know what to do!! \nWill you help me {}?'\n[Y]/[N]\nAnswer: ".format(name)
     for char in sticky_situation:
-        sleep(0.15)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1.5)
@@ -2456,6 +2457,7 @@ def start_game():
         end_game()
     else:
         intro_error = print("'Sorry I dont understand, are you speaking to me in cat?! Eeek! Please try again!'")
+        start_game()
 # GAME INTRODUCTION SETTING THE SCENE 
 def intro():
     custom_fig = Figlet(font='ogre')
@@ -2499,7 +2501,7 @@ def intro():
     print("")
     time.sleep(1.5)
     for char in "It's a beautiful day on the farm.\nThe sun is shining high in the sky.\nBirds are tweeting as they sit together in the treetops.\nThe wind blows ruffling up some fallen leaves.\nEveryone is busying themselves and there's a sense of urgency in the air.\n\nLay in a perfect sunny spot on the porch theres a plump cat basking,\nlightly snoozing away in the heat.\n\nNear a big tree sits a little mouse cosily under a mushroom top\nnibbling gently on some cheese crumbs found on the steps of \nthe near by house.\n\nHe nibbles and he nibbles until all the cheese is gone,\nand thinks to himself 'Oh how I wish I had more cheese!'\n\nThe mouse hops and jumps ever so quietly over to the steps\nnext to where the plump kitty is sleeping with some crumbs\nright next to his back paw\n\n....\n\nThe mouse gets closer and closer\n\n....\n\nBeing so careful not to make any loud sounds\n\nOH NO!!!\n\nThe cat stirs\n\n....\n\nThe wind has changed and he caught a big wiff\n\n....\n\nHe's now sat staring down at the mouse\nIt's big paw swipes\n\n....":
-        sleep(0.1)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     time.sleep(1)
@@ -2521,7 +2523,7 @@ def intro():
     print("|                                               | ")
     print(" ----------------------------------------------")
     for char in "\n\n....\n\nEverything goes dark\n\n":
-        sleep(0.1)
+        sleep(TYPEWRITER_TIMINGS)
         sys.stdout.write(char)
         sys.stdout.flush()
     playsound.playsound('sounds/cat_shreak.wav', False)
