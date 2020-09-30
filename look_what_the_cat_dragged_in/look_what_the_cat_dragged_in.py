@@ -7,7 +7,7 @@ import playsound
 import random
 
 
-TYPEWRITER_TIMINGS = 0.025
+TYPEWRITER_TIMINGS = 0.15
 
 # GAME ENDING CREDITS
 def end_game():
