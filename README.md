@@ -8,3 +8,8 @@ Aimed at kids 11+
 pip install
 python look_what_the_cat_dragged_in.py 
 ```
+
+```bash
+pip install
+pyfiglet, emoji, random 
+```
