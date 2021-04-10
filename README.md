@@ -11,5 +11,5 @@ python look_what_the_cat_dragged_in.py
 
 ```bash
 pip install
-pyfiglet, emoji, random 
+pyfiglet, emoji, random, sys, playsound
 ```
